@@ -1,4 +1,4 @@
-## Methods
+## Materials and methods
 
 ### Collections *etc*. for GBS
 
@@ -27,6 +27,6 @@ Catalog was mapped with bwa mem etc.
 
 Raw sequence data for the ASW genome are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession **TBA**.
 The code we used to assemble the ASW genome is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
-We used `snakemake` [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and `Singularity` [@kurtzerSingularityScientificContainers2017] to capture the computing environment.
+We used `snakemake` [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and `Singularity` [@kurtzerSingularityScientificContainers2017]make      to capture the computing environment.
 The final results and all intermediate steps can be reproduced from the raw data with a single command using `snakemake` and `Singularity`.
 The source for this manuscript is hosted at [github.com/TomHarrop/asw-gbs-genome-paper](https://github.com/TomHarrop/asw-gbs-genome-paper).
