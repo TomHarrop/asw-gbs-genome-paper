@@ -11,18 +11,15 @@ Stephen Goldson^4^,
 Peter K. Dearden^1^
  -->
 
-Rachael Ashby^3^  
-Peter K. Dearden^1^  
-Stephen Goldson^4^  
 Thomas W.R. Harrop^1^  
+Marissa F. Le Lec^1^  
+Ruy Juaregui^2^  
+Rachael Ashby^3^  
+Shannon Taylor^1^
 Sarah Inwood^1^  
 Jeanne Jacobs^3^  
-Ruy Juaregui^2^  
-Marissa F. Le Lec^1^  
-Shannon Taylor^1^
-
-> Alphabetical for now!
-> Sample collectors, goldson's dissection crew?
+Stephen Goldson^4^  
+Peter K. Dearden^1^  
 
 ^1^ University of Otago  
 ^2^ AgResearch Palmerston North  
