@@ -11,7 +11,7 @@ We found lots of sweet variation.
 Weevil sampling locations.
 We collected Argentine stem weevils from 4 locations in the North Island and 7 locations in the South Island of New Zealand.
 The number of weevils genotyped from each location is show on the map.
-Cor (Coromandel),
+<!-- Cor (Coromandel),
 Rua (Ruakura),
 Tar (Taranaki),
 Wel (Wellington),
@@ -22,7 +22,8 @@ Oph (Ophir),
 Mar(?) (Mararoa Downs),
 Mos (Mossburn),
 For (Fortrose)
-](fig/location_map.pdf) 
+ -->
+ ](fig/location_map.pdf) 
 
 ![**Figure 1B.**
 A. Argentine stem weevil sampling locations.
