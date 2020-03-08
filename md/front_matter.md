@@ -18,7 +18,7 @@ Rachael Ashby^3^,
 Shannon Taylor^1^,
 Sarah Inwood^1^,
 Jeanne Jacobs^3^,
-Stephen Goldson^4^,  
+Stephen Goldson^4^,
 Peter K. Dearden^1^  
 
 > Goldson's dissection ppl?
