@@ -18,14 +18,19 @@ To produce the short read dataset, an Illumina TruSeq PCR-free 350bp insert libr
 Library preparation and sequencing were performed by Macrogen Inc. (Seoul, Republic of Korea).
 A total of 158 GB of 100 b and 150 b paired-end reads were generated from the TruSeq PCR-free library.
 After removing common sequencing contaminants and trimming adaptor sequences using BBTools [@bushnellBBMapFastAccurate2014], the short-read-only genome was assembled with meraculous [@chapmanMeraculousNovoGenome2011; @chapmanMeraculous2FastAccurate2016; @goltsmanMeraculous2DHaplotypesensitiveAssembly2017].
+Reproducible code for assembling the short-read dataset and assessing the assemblies is hosted at [github.com/tomharrop/asw-nopcr](https://github.com/tomharrop/asw-nopcr).
 
-- WGA of single indiv
-- ONT stuff
-- Assembly tricks
+To produce long reads from a single individual, we produced high molecular weight DNA from a single, male ASW collected from **where?** using a modified  QIAGEN Genomic-tip 20/G extraction protocol [@harropHMWDNAExtraction2018].
+We amplified the DNA using Φ29 multiple displacement amplification (QIAGEN REPLI-g Midi Kit) and debranched the amplified DNA using T7 Endonuclease I (New England Biolabs) according to the Oxford Nanopore Technologies Premium whole genome amplification protocol version WGA_kit9_v1.
+Amplified DNA was sequenced on **X** R9.4.1 flowcells using a **version** MinION sequencer (Oxford Nanopore Technologies).
+We also produced reads from high molecular weight DNA from a pool of 20 unsexed individuals collected from **where?**.
+We sequenced this DNA on **X** R9.4.1 flowcells, following the Genomic DNA by Ligation protocol (SQK-LSK109; Oxford Nanopore Technologies).
+We removed adaptor sequences from the long reads with Porechop 0.2.4 [@wickRrwickPorechop2020] and assembled with Flye 2.6 [@kolmogorovAssemblyLongErrorprone2019].
+Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
-Genome assemblies were assessed using assembly size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. We used RepeatModeler [@smitRepeatModelerOpen12015] and RepeatMasker [@smitRepeatMaskerOpen42015] to estimate the repeat content of the long read genomes. 
-
-The code we used to assemble and assess the ASW genome is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
+All genome assemblies were assessed using assembly size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
+Assemblies that had a high rate of duplicated BUSCO genes were curated with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
+We used RepeatModeler [@smitRepeatModelerOpen12015] and RepeatMasker [@smitRepeatMaskerOpen42015] to estimate the repeat content of the long read genomes. 
 
 ### Genome-based analyses, *F*~ST~, etc. etc.
 
