@@ -34,12 +34,13 @@ C. Some figure showing the high heterozygosity.](/home/tom/Projects/stacks-asw/d
 To find genomic loci associated with between-population variation, we constructed a draft assembly of the ASW genome.
 We initially attempted assembly from a single individual using PCR-free, short read sequencing.
 This resulted in a fragmented assembly with low BUSCO scores (Table 1).
-Because *k*-mer analysis on the raw reads suggested repeat content greater than 30% and high rate of heterozygosity (**Supporting Information**), we then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
+*k*-mer analysis on the raw reads suggested genomic repeat content of at least 28% and 2.1% heterozygosity (**Supporting Information**).
+We then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
 We produced 29.8 GB of quality-filtered reads with an *N*~50~ length of 9.0 KB.
-The low read *N*~50~ length is caused by debranching of the amplified DNA by T7 Endonuclease I, which is necessary following multiple displacement amplification (see methods).
+The low read *N*~50~ length was caused by debranching of the amplified DNA by T7 Endonuclease I, which is necessary following multiple displacement amplification (see methods).
 Assembling the single individual, long read genome resulted in improved contiguity and BUSCO scores (Table 1).
-We detected an extreme level of repeats in the single individual, long read genome (Table 1).
-To improve assembly of long repeat regions, we produced a second ONT dataset with longer reads from HMW DNA from a two pools of 20 individuals each. 
+Consistent with the raw short read data, we detected an **extreme level (how much?)** of repeats in the single individual, long read genome (Table 1).
+To improve assembly across long repeats, we produced a second ONT dataset with longer reads from HMW DNA from a two pools of 20 individuals each. 
 Sequencing these samples on the MinION sequencer produced a total of 12.0 GB of quality-filtered reads with an *N*~50~ length of 19.5 KB.
 **For completeness, assemble the pooled genome alone?**.
 We constructed a combined, long-read genome using the pooled, long-read dataset for contig construction, and the single-individual, long-read dataset for assembly polishing.
