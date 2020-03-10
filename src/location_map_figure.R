@@ -3,8 +3,8 @@
 library(data.table)
 library(ggmap)
 
-wgs84_loc <- fread("data/manual_locations_with_wgs84.csv")
-# wgs84_loc <- fread("data/manual_locations_with_wgs84.csv")[location != "Reefton"]
+# wgs84_loc <- fread("data/manual_locations_with_wgs84.csv")
+wgs84_loc <- fread("data/manual_locations_with_wgs84.csv")[location != "Reefton"]
 wgs84_loc[, loc_code := paste0(location, " (", code, ")")]
 setorder(wgs84_loc, -lat)
 wgs84_loc[, loc_code := factor(loc_code, levels = rev(loc_code))]
@@ -63,12 +63,14 @@ gp <- ggmap(nz) +
 
 gp + xlab("Longitude") + ylab("Latitude")
 
-wo <- grid::convertUnit(unit(483 / 2, "pt"), "mm", valueOnly = TRUE)
-ho <- wo
+wo <- grid::convertUnit(unit(483 * (7/16), "pt"), "mm", valueOnly = TRUE)
+ho <- grid::convertUnit(unit(483 * (1/2), "pt"), "mm", valueOnly = TRUE)
 ggsave(
     "fig/location_map.pdf",
     gp + xlab("Longitude") + ylab("Latitude"),
     width = wo,
     height = ho,
-    unit = "mm")
+    unit = "mm",
+    device = cairo_pdf)
 
+saveRDS(gp, "fig/location_map.Rds")

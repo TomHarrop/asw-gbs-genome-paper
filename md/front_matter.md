@@ -1,4 +1,4 @@
-# Genetic variation associated with a geographical cline in New Zealand populations of Argentine Stem Weevil
+# Genetic variation associated with a geographical cline in invasive populations of Argentine Stem Weevil
 
 <!-- Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
@@ -14,9 +14,10 @@ Peter K. Dearden^1^
 Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
 Ruy Juaregui^2^,
-Rachael Ashby^3^,
 Shannon Taylor^1^,
 Sarah Inwood^1^,
+Siva Ganesh (**sp?**)^2^,
+Rachael Ashby^3^,
 Jeanne Jacobs^3^,
 Stephen Goldson^4^,
 Peter K. Dearden^1^  
@@ -27,4 +28,3 @@ Peter K. Dearden^1^
 ^2^ AgResearch Palmerston North  
 ^3^ AgResearch Lincoln?  
 ^4^ BPRC
-
