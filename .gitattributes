@@ -1,0 +1,4 @@
+*.Rds filter=lfs diff=lfs merge=lfs -text
+plink.raw filter=lfs diff=lfs merge=lfs -text
+data/plink.raw filter=lfs diff=lfs merge=lfs -text
+data/manual_locations_with_wgs84.csv filter=lfs diff=lfs merge=lfs -text
