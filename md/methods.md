@@ -1,14 +1,20 @@
 ## Materials and methods
 
-### Population sampling
+### Weevil sampling
 
-**Weevil collection details from Goldson & friends.**
+From Goldson & co:
+
+- weevil collection details for geographic survey
+- collection and processing/dissection details for parasitised *vs*. unparasitised expt
 
 ### Reduced-representation genome sequencing and processing
 
-**AgResearch details on DNA extraction, GBS.**
+From AgResearch:
+
+- details on DNA extraction, GBS pipeline and sequencing
+
 We used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
-Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads depending on barcode length.
+Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads, depending on barcode length.
 Reads were trimmed by searching for adaptors with a minimum match of 11 b.
 Reads shorter than 80 b after trimming were discarded.
 All remaining reads were truncated to 80 b to account for unmatched adaptor sequence < 11 b that may have been present at the end of reads.
@@ -29,12 +35,12 @@ We amplified the DNA using Φ29 multiple displacement amplification (QIAGEN REPL
 Amplified DNA was sequenced on 6 R9.4.1 flowcells using a MinION Mk1B sequencer (Oxford Nanopore Technologies).
 We also extracted high molecular weight DNA from three pools, each of 20 unsexed individuals collected from Ruakura, New Zealand.
 We sequenced this pooled DNA on 5 R9.4.1 flowcells, following the Genomic DNA by Ligation protocol (SQK-LSK109; Oxford Nanopore Technologies).
-We removed adaptor sequences from the long reads with Porechop 0.2.4 [github.com/rrwick/Porechop](https://github.com/rrwick/Porechop) and assembled with Flye 2.6 [@kolmogorovAssemblyLongErrorprone2019].
+We removed adaptor sequences from the long reads with Porechop 0.2.4 ([github.com/rrwick/Porechop](https://github.com/rrwick/Porechop)) and assembled with Flye 2.6 [@kolmogorovAssemblyLongErrorprone2019].
 Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
-All genome assemblies were assessed using size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
+All genome assemblies were assessed by size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
 Redundant contigs were removed from the combined, long read assembly with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
-We used the Dfam TE Tools Container v1.1 [github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools) with RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] to estimate the repeat content of the long read genomes.
+We used the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) with RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] to estimate the repeat content of the long read genomes.
 
 ### Genome-based analyses, *F*~ST~, etc. etc.
 
