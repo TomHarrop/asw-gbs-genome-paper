@@ -48,7 +48,7 @@ This suggests that the developing resistance of the weevil to biocontrol [@tomas
 To find genomic loci associated with between-population variation, we constructed a draft assembly of the ASW genome.
 We initially attempted assembly from a single individual using PCR-free, short read sequencing.
 This resulted in a fragmented assembly with low BUSCO scores (Table 1).
-*k*-mer analysis on the raw short reads suggested 2.1% heterozygosity and a genomic repeat content of at least 28% (**Supporting Information**).
+*k*-mer analysis on the raw short reads suggested 2.1 polymorphisms per 100 bp and a genomic repeat content of at least 28% (**Supporting Information**).
 We then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
 We produced 29.8 GB of quality-filtered reads with an *N*~50~ length of 9.0 KB.
 The low read *N*~50~ length was caused by debranching of the amplified DNA by T7 Endonuclease I, which is necessary following multiple displacement amplification (see methods).
@@ -62,10 +62,10 @@ This improved the BUSCO scores, but produced a large number of redundant contigs
 Finally, we used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
 This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
 
-Short read assembly was not possible with this genome because of the extreme repeat content.
+Short read assembly failed for with this genome because of the extreme repeat content.
 The final draft assembly had a repeat content of **67.8%** (Table 1), with a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp.
-The non-repetitive regions (*i.e.* the gaps between repeats) had an *N*~50~ length of 1066 bp.
-Third generation (long read) sequencing enabled us to assemble a draft genome, but we expect gaps in the assembly to exist at larger repeat regions that were not covered by long reads.
+The non-repetitive regions had an *N*~50~ length of 1066 bp.
+Third generation (long read) sequencing enabled us to assemble a draft genome, but we expect gaps in the assembly to exist at larger repeat regions that were not sufficiently covered by long reads.
 
 ```table
 ---
