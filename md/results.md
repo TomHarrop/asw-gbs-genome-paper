@@ -15,7 +15,6 @@ These results suggest that there is a large amount of unstructured variation acr
 **A** Weevil sampling locations.
 We collected Argentine stem weevils from 4 locations in the North Island and 6 locations in the South Island of New Zealand.
 The number of weevils genotyped from each location is show on the map.
-The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013].
 <!-- Cor (Coromandel),
 Rua (Ruakura),
 Tar (Taranaki),
@@ -36,7 +35,7 @@ PC1 and PC2 together explain 12.2% of variance in the dataset, indicating a high
 
 ### Genetic variation is not associated with parasitism by a biocontrol agent
 
-To try to detect variation associated with parasitism by *Microctonus hyperodae* (*i.e.* selection exerted by the biocontrol agent), we genotyped weevils that had also been tested for the presence of a parasitoid larva.
+To detect variation associated with parasitism by *Microctonus hyperodae* (*i.e.* selection exerted by the biocontrol agent), we genotyped weevils that had also been tested for the presence of a parasitoid larva.
 These weevils were collected from **Lincoln, New Zealand?** and **Ruakura, New Zealand?**, because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
 After filtering and assembly, we genotyped **X** parasitised weevils and **Y** weevils without a detected parasitoid at **Z** loci.
 **We did not detect SNPs that were associated with the presence of a parasitoid larva, although we were able to detect SNPs that were associated with the location the weevil was collected.
@@ -62,11 +61,6 @@ This improved the BUSCO scores, but produced a large number of redundant contigs
 Finally, we used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
 This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
 
-Short read assembly failed for with this genome because of the extreme repeat content.
-The final draft assembly had a repeat content of **67.8%** (Table 1), with a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp.
-The non-repetitive regions had an *N*~50~ length of 1066 bp.
-Third generation (long read) sequencing enabled us to assemble a draft genome, but we expect gaps in the assembly to exist at larger repeat regions that were not sufficiently covered by long reads.
-
 ```table
 ---
 caption: '**Table 1**. Assembly statistics for the final draft genome and intermediate assemblies. n.d.: not determined.'
@@ -88,5 +82,9 @@ To find regions of the genome associated with genetic differentiation between we
 
 ### New Zealand population of Argentine stem weevils is large and diverse, with multiple introductions
 
+**[No] evidence for reduced diversity since/on introduction of invasive populations to NZ**.
+
 - lack of genetic structure (?)
 - historical Ne, if we can (?)
+
+

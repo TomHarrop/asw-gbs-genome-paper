@@ -7,6 +7,8 @@ From Goldson & co:
 - weevil collection details for geographic survey
 - collection and processing/dissection details for parasitised *vs*. unparasitised expt
 
+The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013].
+
 ### Reduced-representation genome sequencing and processing
 
 From AgResearch:

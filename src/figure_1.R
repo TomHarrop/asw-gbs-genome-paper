@@ -1,7 +1,5 @@
 #!/usr/bin/env Rscript
 
-library(adegenet)
-library(data.table)
 library(ggplot2)
 library(ggmap)
 library(cowplot)
@@ -9,10 +7,14 @@ library(cowplot)
 f1a <- readRDS("fig/location_map.Rds")
 f1b <- readRDS("fig/pca2d.Rds")
 
+lon_bump <- 0.25
+lat_bump <- 0.025
+
 gp <- plot_grid(f1a + xlab("Longitude") + ylab("Latitude"),
           f1b,
-          align = "hv",
-          axis = "bl",
+          align = "h",
+          axis = "tblr",
+          greedy = true,
           nrow = 1,
           rel_widths = c(9, 11),
           labels = c("A", "B"),
