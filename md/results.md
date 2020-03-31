@@ -76,7 +76,12 @@ include: tables/genome_table.csv
 
 To find regions of the genome associated with genetic differentiation between weevil populations, we mapped our SNP catalog against our draft genome.
 
-- `dapc` of weevil populations showing N-S cline (Tom)
+![
+**Figure 2.**
+**A** Most variation between populations is explained by a component that is associated with latitude.
+Discriminant analysis of principal components (DAPC) was used on 22,081 SNPs that were anchored to the draft stem weevil genome.
+](fig/dapc_genome.pdf)
+
 - SNPs associated with difference between groups (Marissa)
 - signs of selection in the genome (?)
 

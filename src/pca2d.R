@@ -8,7 +8,7 @@ library(ggplot2)
 # GLOBALS #
 ###########
 
-plink_file <- "data/plink.raw"
+plink_file <- "data/plink.raw" # bak.popgen/plink.raw (unmapped)
 
 # roughly north to south
 pop_order <- c(
