@@ -1,9 +1,11 @@
-# [No] evidence of a bottleneck in invasive New Zealand populations of Argentine Stem Weevil
+# Genetic diversity in invasive populations of Argentine stem weevil allows evolution of resistance to biocontrol
+
+<!-- # [No] evidence of a bottleneck in invasive New Zealand populations of Argentine Stem Weevil
 
 # Frequent, multiple incursions of Argentine Stem Weevils into New Zealand pastures
 
 # Genetic variation associated with a geographical cline in invasive populations of Argentine Stem Weevil
-
+ -->
 <!-- Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
 Rachael Ashby^3^,
@@ -20,6 +22,7 @@ Marissa F. Le Lec^1^,
 Ruy Juaregui^2^,
 Shannon Taylor^1^,
 Sarah Inwood^1^,
+John Skelly^1^,
 Siva Ganesh (**sp?**)^2^,
 Rachael Ashby^3^,
 Jeanne Jacobs^3^,

@@ -3,12 +3,13 @@
 library(adegenet)
 library(data.table)
 library(ggplot2)
+library(vcfR)
 
 ###########
 # GLOBALS #
 ###########
 
-plink_file <- "data/plink.raw" # bak.popgen/plink.raw (unmapped)
+vcf_file <- "data/populations.snps.vcf" # reference-mapped, 20200423
 
 # roughly north to south
 pop_order <- c(
@@ -19,7 +20,7 @@ pop_order <- c(
     "Greymouth" = "Greymouth",
     "Lincoln" = "Lincoln",
     "O" = "Ophir",
-    "MararoaDowns" = "Mararoa Downs",
+    "Mararoa" = "Mararoa Downs",
     "Mossburn" = "Mossburn",
     "Fortrose" = "Fortrose")
 
@@ -28,16 +29,17 @@ pop_order <- c(
 # MAIN #
 ########
 
-snp_data <- read.PLINK(plink_file)
-
-# add pop (this is to remove the 2 reefton samples)
-pop(snp_data) <- gsub("[^[:alpha:]]+", "", snp_data$ind.names)
-snps_filtered <- snp_data[pop(snp_data) %in% names(pop_order), ]
+vcf <- read.vcfR(vcf_file)
+snp_data <- vcfR2genlight(vcf)
 
 # impute NAs on mean
-na_means <- tab(snps_filtered, NA.method = "mean")
+na_means <- tab(snp_data, NA.method = "mean")
 snps_imputed <- new("genlight", na_means)
 ploidy(snps_imputed) <- 2
+
+# add pop
+pops <- gsub("^[[:alpha:]]+_([[:alpha:]]+).*", "\\1", snps_imputed$ind.names)
+pop(snps_imputed) <- factor(pops, levels = names(pop_order))
 
 # run the pca
 pca <- glPca(snps_imputed, nf = Inf)
@@ -52,7 +54,7 @@ gt <- paste0(length(unique(snps_imputed$ind.names)),
 # generate pca plot data
 pca_dt <- data.table(pca$scores, keep.rownames = TRUE)
 setnames(pca_dt, "rn", "individual")
-pca_dt[, population := gsub("[^[:alpha:]]+", "", individual)]
+pca_dt[, population := gsub("^[[:alpha:]]+_([[:alpha:]]+).*", "\\1", individual)]
 pca_dt[, population := factor(plyr::revalue(as.character(population), pop_order),
                               levels = pop_order)]
 
