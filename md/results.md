@@ -34,7 +34,7 @@ include: tables/genome_table.csv
 
 ### Variation in NZ populations of Argentine stem weevil
 
-To measure genetic variation in invasive New Zealand populations of ASW, we collected individuals from 7 sites in the North Island and 5 sites in the South Island of New Zealand (Figure 1A).
+To measure genetic variation in invasive New Zealand populations of ASW, we collected individuals from 10 sites across the North and South Islands of New Zealand (Figure 1A).
 We genotyped individuals with a modified genotyping-by-sequencing (GBS) protocol [@elshireRobustSimpleGenotypingbySequencing2011].
 After strict filtering of the raw GBS data, we mapped reads from each individual against our draft genome and used gstacks to assemble loci [@catchenStacksAnalysisTool2013].
 For analysis, we removed loci with more than two alleles, minor allele frequency less than 0.05, or missing genotypes in more than 20% of individuals.
@@ -76,18 +76,18 @@ PC1 and PC2 together explain 9.4% of variance in the dataset, indicating a high 
 
 To detect variation associated with parasitism by *Microctonus hyperodae* (*i.e.* selection exerted by the biocontrol agent), we genotyped weevils that had also been tested for the presence of a parasitoid larva.
 These weevils were collected from **Lincoln, New Zealand?** and **Ruakura, New Zealand?**, because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
-After filtering and assembly, we genotyped **X** parasitised weevils and **Y** weevils without a detected parasitoid at the same 20,445 loci used for the geographical samples, which contained 4,579 biallelic sites in this second dataset.
+After filtering, we genotyped **X** parasitised weevils and **Y** weevils without a detected parasitoid at the same 20,445 loci used for the geographical samples, which contained 4,579 biallelic sites in this second dataset.
 **We did not detect SNPs that were associated with the presence of a parasitoid larva, although we were able to detect SNPs that were associated with the location the weevil was collected.
-(Figure to show this).**
+Figure to show this.**
 This suggests that the developing resistance of the weevil to biocontrol [@tomasettoIntensifiedAgricultureFavors2017] is not related to within-population genetic variation that allows some weevils to avoid parasitism or its effects.
 
 ### Genetic variation between NZ weevils associates with a geographical cline
 
-Although geographic location explains a small proportion of the genetic variance between ASW individuals, parasitism rates vary at different sites in NZ (**citation?**)
+Although geographic location explains a small proportion of the genetic variance between ASW individuals, parasitism rates vary at different sites in NZ (**ref**).
 We addressed this by testing whether differences between populations were related to selection in defined regions of the genome.
 We used discriminant analysis of principal components to find genetic variability associated with differences between populations (DAPC; @jombartDiscriminantAnalysisPrincipal2010).
 The major linear discriminant, which explains 97.7% of between-population variations, separates populations from North and South of the Alpine divide (Figure 2A), although admixture was evident in all populations (Figure 2B).
-**Regions of the genome associated with this.**
+Differences in allele frequencies between weevils collected from North and South of the Alpine divide suggest that **x** regions of the genome may be under **balancing/purifying** selection (**run BayeScan**).
 
 ![
 **Figure 2**.
