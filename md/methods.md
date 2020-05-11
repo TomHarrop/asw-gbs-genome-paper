@@ -34,6 +34,7 @@ Reproducible code for assembling the short-read dataset and assessing the assemb
 
 To produce long reads from a single individual, we produced high molecular weight DNA from a single, male ASW collected from Ruakura, New Zealand, using a modified  QIAGEN Genomic-tip 20/G extraction protocol [@harropHMWDNAExtraction2018].
 We amplified the DNA using Φ29 multiple displacement amplification (QIAGEN REPLI-g Midi Kit) and debranched the amplified DNA using T7 Endonuclease I (New England Biolabs) according to the Oxford Nanopore Technologies Premium whole genome amplification protocol version WGA_kit9_v1.
+Debranching reduced the raw read *N*~50~ length to 9.0 KB.
 Amplified DNA was sequenced on 6 R9.4.1 flowcells using a MinION Mk1B sequencer (Oxford Nanopore Technologies).
 We also extracted high molecular weight DNA from three pools, each of 20 unsexed individuals collected from Ruakura, New Zealand.
 We sequenced this pooled DNA on 5 R9.4.1 flowcells, following the Genomic DNA by Ligation protocol (SQK-LSK109; Oxford Nanopore Technologies).
@@ -42,7 +43,7 @@ Reproducible code for assembling and assessing the long-read ASW genomes is host
 
 All genome assemblies were assessed by size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
 Redundant contigs were removed from the combined, long read assembly with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
-We used the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) with RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] to estimate the repeat content of the long read genomes.
+We attempted to use RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the long read genomes, but >500M high-scoring Segment Pairs (HSPs) were identified and RepeatModeler did not finish after running for 4 weeks with 144 GB of physical RAM.
 
 ### Genome-based analyses, *F*~ST~, etc. etc.
 

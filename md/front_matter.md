@@ -1,21 +1,5 @@
-# Genetic diversity in invasive populations of Argentine stem weevil allows evolution of resistance to biocontrol
+# Genetic diversity in invasive populations [of Argentine stem weevil] allows adaptation to biocontrol
 
-<!-- # [No] evidence of a bottleneck in invasive New Zealand populations of Argentine Stem Weevil
-
-# Frequent, multiple incursions of Argentine Stem Weevils into New Zealand pastures
-
-# Genetic variation associated with a geographical cline in invasive populations of Argentine Stem Weevil
- -->
-<!-- Thomas W.R. Harrop^1^,
-Marissa F. Le Lec^1^,
-Rachael Ashby^3^,
-Ruy Juaregui^2^,
-Sarah Inwood^1^,
-Shannon Taylor^1^\*,
-Jeanne Jacobs^3^,
-Stephen Goldson^4^,
-Peter K. Dearden^1^
- -->
 
 Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
@@ -29,9 +13,9 @@ Jeanne Jacobs^3^,
 Stephen Goldson^4^,
 Peter K. Dearden^1^  
 
-> Goldson's dissection ppl?
+**Goldson lab dissection ppl? Stephen, please add.**
 
-^1^ University of Otago  
+^1^ University of Otago & GA  
 ^2^ AgResearch Palmerston North  
 ^3^ AgResearch Lincoln?  
 ^4^ BPRC

@@ -7,8 +7,8 @@ library(ggplot2)
 ###########
 # GLOBALS #
 ###########
-
-summary_file <- "data/populations.sumstats_summary.tsv" # reference-mapped, 20200423
+# 070_populations/geo/populations.sumstats_summary.tsv, 20200429
+summary_file <- "data/populations.sumstats_summary.tsv" 
 
 # roughly north to south
 pop_order <- c(

@@ -8,9 +8,9 @@
     + To address this, we measured the genetic variation in New Zealand populations of the pasture pest, Argentine stem weevil (*Listronotus bonariensis*), which is controlled with declining effectiveness by a parasitoid wasp, *Microctonus hyperodae*.
     + We constructed a draft reference genome, then collected samples from a geographical survey of 10 sites around New Zealand and genotyped them using a modified genotyping-by-sequencing approach.
 - main results (2-3 points)
-    + New Zealand populations of Argentine stem weevil have high levels of heterozygosity and low levels of inbreeding, suggesting a large effective population size with frequent gene flow.
-    + This implies that Argentine stem weevils were able to evolve more rapidly than the control agent, which reproduces asexually. 
-    + These findings show that it is critical for long-term success of biocontrol programs to monitor the level of diversity in control agents and their target organisms.
+    + New Zealand populations of Argentine stem weevil have high levels of heterozygosity and low levels of inbreeding, consistent with a large effective population size and frequent gene flow.
+    + This implies that Argentine stem weevils were able to evolve more rapidly than its biocontrol agent, which reproduces asexually. 
+    + These findings show that monitoring genetic diversity in biocontrol agents and their targets is critical for long-term success of biological control.
 
 ### Synthesis and applications
 

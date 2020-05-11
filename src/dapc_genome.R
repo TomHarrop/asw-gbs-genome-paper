@@ -9,7 +9,7 @@ library(ggplot2)
 # GLOBALS #
 ###########
 
-vcf_file <- "data/populations.snps.vcf" # reference-mapped, 20200421
+vcf_file <- "data/populations.geo.pruned.vcf" # reference-mapped, ld-pruned 20200429
 
 # roughly north to south
 pop_order <- c(

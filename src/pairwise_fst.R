@@ -41,10 +41,12 @@ fst_pd <- rbind(filled_fst,
 # get population order
 fst_mat <- as.matrix(data.frame(dcast(fst_pd, pop1 ~ pop2), row.names = "pop1"))
 hc <- hclust(as.dist(fst_mat), method = "ward.D2")
-clust_order <- hc$labels[hc$order]
+clust_order <- plyr::revalue(hc$labels[hc$order], pop_order)
 
-fst_pd[, pop1 := factor(pop1, levels = clust_order)]
-fst_pd[, pop2 := factor(pop2, levels = clust_order)]
+fst_pd[, pop1 := factor(plyr::revalue(pop1, pop_order),
+                        levels = clust_order)]
+fst_pd[, pop2 := factor(plyr::revalue(pop2, pop_order),
+                        levels = clust_order)]
 
 # fix pop
 # fst_pd[, pop1 := plyr::mapvalues(pop1, names(pop_order), pop_order)]

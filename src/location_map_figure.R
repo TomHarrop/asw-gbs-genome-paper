@@ -61,7 +61,7 @@ gp <- ggmap(nz) +
               fontface = "bold") +
     scale_color_viridis_d(guide = FALSE)
 
-gp + xlab("Longitude") + ylab("Latitude")
+# gp + xlab("Longitude") + ylab("Latitude")
 
 wo <- grid::convertUnit(unit(483 * (7/16), "pt"), "mm", valueOnly = TRUE)
 ho <- grid::convertUnit(unit(483 * (1/2), "pt"), "mm", valueOnly = TRUE)

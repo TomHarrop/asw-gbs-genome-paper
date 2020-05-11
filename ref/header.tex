@@ -29,6 +29,14 @@
     labelformat=empty,%
     width=.9\textwidth]{caption}
 
+% enable placing caps manually
+\usepackage{changepage}
+\def\beginfigurecaption{%
+\begin{figure}%
+\begin{adjustwidth}{0.05\textwidth}{0.05\textwidth}%
+\small\centering}
+\def\endfigurecaption{\end{adjustwidth}\end{figure}}
+
 % linenumbers
 \usepackage{etoolbox}
 \usepackage[left]{lineno}
