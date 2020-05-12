@@ -2,27 +2,12 @@
 
 ### Weevil sampling
 
-From Goldson & co:
+**Stephen, I need these details from your team please**:
 
 - weevil collection details for geographic survey
 - collection and processing/dissection details for parasitised *vs*. unparasitised expt
 
-The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013].
-
-### Reduced-representation genome sequencing and processing
-
-From AgResearch:
-
-- details on DNA extraction, GBS pipeline and sequencing
-
-We used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
-Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads, depending on barcode length.
-Reads were trimmed by searching for adaptors with a minimum match of 11 b.
-Reads shorter than 80 b after trimming were discarded.
-All remaining reads were truncated to 80 b to account for unmatched adaptor sequence < 11 b that may have been present at the end of reads.
-To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
-We followed the recommended steps for optimising parameters [@parisLostParameterSpace2017; @rochetteDerivingGenotypesRADseq2017] before assembling loci *de novo* using Stacks [@catchenStacksAnalysisTool2013].
-The code we used to process the raw reads, optimise parameters and assemble loci is hosted at [github.com/TomHarrop/stacks-asw](https://github.com/TomHarrop/stacks-asw) and [github.com/MarissaLL/asw-para-matched](https://github.com/MarissaLL/asw-para-matched).
+The map in Figure 1 was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013].
 
 ### Genome assembly
 
@@ -45,9 +30,30 @@ All genome assemblies were assessed by size and contiguity statistics and BUSCO 
 Redundant contigs were removed from the combined, long read assembly with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
 We attempted to use RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the long read genomes, but >500M high-scoring Segment Pairs (HSPs) were identified and RepeatModeler did not finish after running for 4 weeks with 144 GB of physical RAM.
 
-### Genome-based analyses, *F*~ST~, etc. etc.
+### Reduced-representation genome sequencing, processing and analysis
 
-- Catalog mapping *e.g.* `bwa mem`
+**Jeanne, I need these details from your team please**:
+
+- details on DNA extraction, GBS pipeline and sequencing
+
+All the code we used to process the raw reads, assemble loci and run downstream analyses is hosted at [github.com/TomHarrop/stacks-asw](https://github.com/TomHarrop/stacks-asw), including the parameters and software containers for each step.
+
+Briefly, we used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
+Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads, depending on barcode length.
+Reads were trimmed by searching for adaptors with a minimum match of 11 b.
+Reads shorter than 80 b after trimming were discarded.
+All remaining reads were truncated to 80 b to account for unmatched adaptor sequence < 11 b that may have been present at the end of reads.
+To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
+We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksAnalysisTool2013].
+
+For analysis, we used bcftools [ref?] to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
+After filtering loci, we also removed individuals that were missing genotypes at more than 20% of loci.
+We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
+We used plink 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015].
+We used PGDSpider 2.1.1.5 [@lischerPGDSpiderAutomatedData2012] to convert the un-pruned dataset for detection of loci under selection with BayeScan 2.1 [@follGenomeScanMethodIdentify2008].
+After statistically phasing SNPs from the un-pruned dataset with SHAPEIT v2 r904 [@delaneauLinearComplexityPhasing2012], we analysed cross-population extended haplotype homozygosity with the R package rehh 3.1.0 [@gautierRehhReimplementationPackage2017].
+For demographic analysis, we converted the pruned dataset to site frequency spectra using easysfs commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS), and tested demographic models using 
+**fastsimcoal2 2.6 (tbc)** [@excoffierRobustDemographicInference2013].
 
 ### Reproducibility and data availability
 

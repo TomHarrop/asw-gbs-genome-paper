@@ -24,7 +24,7 @@ This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.
  -->
 
 : **Table 1**.
-Assembly statistics for the final draft genome and intermediate assemblies. n.d.: not determined.
+Assembly statistics for the final draft genome and intermediate assemblies. n.d.: not determined. x: RepeatModeler has been running for 6 weeks now, it's never going to finish.
 
 |                                    | Short read | Single individual, long read | Pooled, long read | Combined, long read | Final draft |
 |----------:|:-----|:-----|:-----|:-----|:-----|
@@ -34,7 +34,6 @@ Assembly statistics for the final draft genome and intermediate assemblies. n.d.
 |   Complete, single-copy BUSCOs (%) | 32.7       | 72.2                         | 71.0              | 69.2                | 78.8        |
 | Complete, multiple-copy BUSCOs (%) | 17.2       | 7.5                          | 5.9               | 17.4                | 5.1         |
 |                 Repeat content (%) | n.d.       | x                            | x                 | x                   | ~67.8       |
-
 
 <!-- 
 ```table
@@ -69,6 +68,7 @@ This indicates a degree of genetic isolation between populations from North and 
 **Figure 1.** Caption next page.
 ](fig/newfigure_1.pdf)
 
+
 \beginfigurecaption
 
 **Figure 1.**
@@ -98,31 +98,40 @@ To detect large-effect variants associated with susceptibility to parasitism by 
 We used a total of 179 individuals, collected from Lincoln, New Zealand, and Ruakura, New Zealand, because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
 The weevils were examined for a parasitoid larva and genotyped at the same loci used for the geographical survey.
 After filtering and pruning sites in linkage disequilibrium, we used 19,482 SNPs for PCA and DAPC.
-We did not detect any genetic differentiation associated with the presence of a parasitoid, either within populations or between populations.
+We did not detect any genetic differentiation associated with the presence of a parasitoid, either within populations or between populations, or any evidence of skewed allele frequencies in these groups using BayeScan (lowest *Q*-value 0.97).
+
+>>>
+@ Marissa and Peter - there are some contigs that come up using XPEHH for these groups.
+There's a contig (contig_11238) full of transcription factors with a single locus that has a high positive XPEHH score, but this would suggest selection in the *parasitised* group.
+There is one contig (contig_5955) with a large negative XPEHH (selection in non-parasitised group) but the genes are not interesting.
+I think the XPEHH results might be spurious because the low number of markers per contig lead to dodgy phasing, so I'm thinking of removing XPEHH from the following section.
+I've left them in this version to get your thoughts.
+
 
 ### Genetic differentiation between ASW populations North and South of the Alpine divide
 
 Although we did not detect variation associated with presence of a parasitoid, parasitism rate varies across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
-We grouped individuals that were collected from North and South of the Alpine divide to investigate the genetic differentiation between these regions (Figure 1).
+To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Alpine divide (Figure 1).
 The two groups had a mean *F*~ST~ of 0.013.
-Using BayeScan [@follGenomeScanMethodIdentify2008a], we detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome (Figure 2).
+We detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome with BayeScan (Figure 2).
 The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 2).
 Using an orthogonal method, 32 SNPs across 5 contigs had outlying cross-population extended haplotype homozygosity (XPEHH) scores [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012].
 Both methods identified putative SNPs under selection an overlapping region on contig_40523.
 These sites had high α values and positive XPEHH scores, suggesting diversifying selection in the North group.
-We annotated four genes on contig_40523, homologous to insect genes with uncharacterised functions.
+We identified four genes on contig_40523.
+None had characterized functions in insects.
 
 ![
 **Figure 2**.
 **A** Regions of the draft ASW genome that have altered allele frequencies between populations from North and South of the Alpine divide.
 47 SNPs on 24 contigs have altered allele frequencies, using the arbitrary *Q*-value cutoff of 0.01.
-**B** Models of population demographics.
+**B** Models of population demographics and results (in progress).
 ](/home/tom/Projects/stacks-asw/test_bs/bs_plot.pdf)
 
 \clearpage
 
 : **Table 2**.
-Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008a] (*Q* < 0.01) or cross-population extended haplotype homozygosity (XPEHH) analysis [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012] (-log~10~*p* > 4). α is BayeScan's locus-specific component of *F*~ST~ coefficient [@follGenomeScanMethodIdentify2008a]. Positive values suggest diversifying selection. Positive XPEHH scores suggest selection in the North group, and negative scores suggest selection in the South group.
+Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008] (*Q* < 0.01) or cross-population extended haplotype homozygosity (XPEHH) analysis [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012] (-log~10~*p* > 4). α is BayeScan's locus-specific component of *F*~ST~ coefficient [@follGenomeScanMethodIdentify2008]. Positive values suggest diversifying selection. Positive XPEHH scores suggest selection in the North group, and negative scores suggest selection in the South group.
 
 +----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
 |         Contig | Total | BayeScan | BayeScan region    | α            | XPEHH | XPEHH region       | XPEHH          |
@@ -185,12 +194,13 @@ Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008
 |      contig_71 | 22    | 0        |                    |              | 1     | 247,010            | 7.34           |
 +----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
 
-### New Zealand population of Argentine stem weevils is large and diverse, with multiple introductions
+### Repeated/large/separate incursions of ASW into New Zealand
 
-Currently testing 3 models:
+This is in progress.
+We're testing 3 main models:
 
-- model 1: single introduction then bottleneck, spread, diversification + gene flow
-- model 2: **separate introductions**, then bottlenecks, to north and south island +  gene flow
-- model 3: separate introductions, then bottlenecks, from **different source populations** to north and south island +  gene flow
+- model 1: single introduction then bottleneck, spread, diversification, and gene flow.
+- model 2: **separate introductions** to North and South, with bottlenecks and gene flow between populations.
+- model 3: separate introductions, then bottlenecks, from **different source populations** to North and South, with bottlenecks and gene flow between populations.
 - all of the above but without bottlenecks to simulate large or repeated incursions.
 

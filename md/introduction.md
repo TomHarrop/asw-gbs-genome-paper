@@ -1,12 +1,16 @@
 ## Introduction
 
-Biocontrol, evolution etc.
-Once established, failure of biological control is **rare/unprecedented?**, because **xyz** (**ref**).
+Biocontrol paragraph (not written yet):
+
+- use of biocontrol
+- problems with establishment
+- likelihood / incidence of resistance after establishment
+- Once established, failure of biological control is rare/unprecedented (?), because **xyz** (**ref**).
 
 New Zealand pastures are highly modified landscapes that suffer from severe pest impacts [@fergusonQuantifyingEconomicCost2019].
 The susceptibility of pasture to pests may be due to low plant and animal diversity, resulting in low biotic resistance to invasive species [@goldsonSevereInsectPest2020].
 The Argentine stem weevil (ASW), *Listronotus bonariensis* Kuschel (Coleoptera: Curculionidae), is a particularly destructive, invasive pest of pasture, reaching densities of 700 adults per m^2^ and causing economic impacts up to NZ$200M per annum [@barkerArgentineStemWeevil1993; @prestidgeEconomicCostArgentine1991; @fergusonQuantifyingEconomicCost2019].
-Conventional, chemical control of ASW is not possible because **xyz** (**ref**).
+Conventional, chemical control of ASW is not effective because **xyz** (**ref**).
 To complement endophyte-based plant resisance [@johnsonExploitationEpichloaeEndophytes2013; @kauppinenEpichloeGrassEndophytes2016], the solitary wasp *Microctonus hyperodae* Loan (Hymenoptera: Braconidae) was released for biological control of *L. bonariensis* in 1992.
 Within three years of its release, parasitism of ASW by *M. hyperodae* reached 90% [@barkerEarlyImpactEndoparasitoid2006], reducing or eliminating damage by ASW [*e.g.* @barkerEarlyImpactEndoparasitoid2006; @goldsonArgentineStemWeevil2011; @barkerBiologyIntroducedBiocontrol2013].
 
