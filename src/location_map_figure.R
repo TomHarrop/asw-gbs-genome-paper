@@ -27,8 +27,9 @@ if(!file.exists("data/nz_map.Rds")) {
 
 # plot
 bbox = c(165,-47.5,180,-35)
-lon_bump <- 0.25
+lon_bump <- 0.20
 lat_bump <- 0.025
+lat_bump <- 0
 
 gp <- ggmap(nz) +
     theme_minimal(base_size = 8) +
@@ -37,29 +38,30 @@ gp <- ggmap(nz) +
     ylim(c(-47, -35)) + ylab(NULL) +
     geom_point(mapping = aes(x = lon,
                              y = lat,
-                             colour = loc_code),
-               # shape = 16,
-               size = 0.8,
+                             fill = loc_code),
+               colour = "black",
+               shape = 21,
+               size = 2,
                data = wgs84_loc) +
     geom_text(mapping = aes(x = lon + lon_bump,
                             y = lat - lat_bump,
-                            label = toupper(location),
-                            colour = loc_code),
-              size = 2,
+                            label = toupper(location)),
+              colour = "black",
+              size = 2.5,
               hjust = "left",
               vjust = 0.5,
-              data = wgs84_loc,
-              fontface = "bold") +
+              data = wgs84_loc) +
+              # fontface = "bold") +
     geom_text(mapping = aes(x = lon - lon_bump,
                             y = lat - lat_bump,
-                            label = n,
-                            colour = loc_code),
-              size = 2,
+                            label = n),
+              colour = "black",
+              size = 2.5,
               hjust = "right",
               vjust = 0.5,
-              data = wgs84_loc,
-              fontface = "bold") +
-    scale_color_viridis_d(guide = FALSE)
+              data = wgs84_loc) +
+              # fontface = "bold") +
+    scale_fill_viridis_d(guide = FALSE)
 
 # gp + xlab("Longitude") + ylab("Latitude")
 
