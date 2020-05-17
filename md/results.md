@@ -66,7 +66,7 @@ This indicates a degree of genetic isolation between populations from North and 
 
 ![
 **Figure 1.** Caption next page.
-](fig/newfigure_1.pdf)
+](fig/figure_1.pdf)
 
 
 \beginfigurecaption
@@ -77,6 +77,7 @@ Genetic diversity in NZ populations of Argentine stem weevil.
 We collected Argentine stem weevils from 4 locations in the North Island and 6 locations in the South Island of New Zealand.
 Greymouth is in the South island, but North of the Alpine divide.
 The number of weevils genotyped from each location is shown on the map.
+Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 **B** Mean observed heterozygosity for each population.
 **C** Pairwise *F*~ST~ values between populations.
 **D**  Principal components analysis (PCA) and **E** discriminant analysis of principle components (DAPC) of 116 individuals genotyped at 18,715 biallelic sites.

@@ -29,6 +29,8 @@ pop_order <- c(
 # MAIN #
 ########
 
+set.seed(42)
+
 # construct genind
 vcf <- read.vcfR(vcf_file)
 snp_data <- vcfR2genlight(vcf)
@@ -52,7 +54,7 @@ xv <- xvalDapc(tab(snps_imputed),
                center = TRUE,
                scale = FALSE, 
                n.pca = 1:20,
-               n.rep  = 3,
+               n.rep  = 5,
                xval.plot = TRUE)
 
 xv_npca <- which.min(xv$`Root Mean Squared Error by Number of PCs of PCA`)
@@ -154,9 +156,9 @@ dapc_posteriors <- ggplot(dapc_post, aes(x = rn, y = prob, fill = pop)) +
     scale_fill_viridis_d(
         direction = 1,
         guide = guide_legend(title = "Assigned population",
-                            title.position = "top")) +
+                             title.position = "top",
+                             reverse = TRUE)) +
     geom_col()
-
 
 # dapc_posteriors <- ggplot(dapc_post, aes(y = rn, x = prob, fill = pop)) +
 #     theme_minimal(base_size = 8) +

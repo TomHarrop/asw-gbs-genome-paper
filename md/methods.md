@@ -7,7 +7,8 @@
 - weevil collection details for geographic survey
 - collection and processing/dissection details for parasitised *vs*. unparasitised expt
 
-The map in Figure 1 was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013].
+The map in Figure 1 was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
+[Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 
 ### Genome assembly
 

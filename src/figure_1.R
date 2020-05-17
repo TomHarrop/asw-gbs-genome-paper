@@ -12,8 +12,8 @@ dapc <- readRDS("fig/dapc_genome.Rds")
 admix <- readRDS("fig/dapc_posteriors.Rds")
 
 
-lon_bump <- 0.25
-lat_bump <- 0.025
+lon_bump <- 0.225
+lat_bump <- 0
 
 r_col <- plot_grid(het,
                    fst + coord_fixed(),
@@ -22,7 +22,7 @@ r_col <- plot_grid(het,
                    label_size = 8, 
                    label_fontface = "bold")
 
-row_1 <- plot_grid(map + xlab("Longitude") + ylab("Latitude"),
+row_1 <- plot_grid(map,
                    r_col,
                    nrow = 1,
                    rel_widths = c(6, 4),
@@ -52,7 +52,7 @@ gp <- plot_grid(row_1,
 wo <- grid::convertUnit(unit(483, "pt"), "mm", valueOnly = TRUE)
 ho <- sqrt(2) * wo * 0.9
 # ho <- grid::convertUnit(unit(483, "pt"), "mm", valueOnly = TRUE)
-ggsave("fig/newfigure_1.pdf",
+ggsave("fig/figure_1.pdf",
        gp,
        width = wo,
        height = ho,

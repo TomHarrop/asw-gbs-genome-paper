@@ -29,6 +29,8 @@ pop_order <- c(
 # MAIN #
 ########
 
+set.seed(14)
+
 vcf <- read.vcfR(vcf_file)
 snp_data <- vcfR2genlight(vcf)
 
