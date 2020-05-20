@@ -15,11 +15,13 @@ A polygenic response on standing variation is consistent with the low level of s
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
 
-Two draft weevil (Coleoptera: Curculionidae) genomes constructed from short reads have been deposited in the NCBI database.
+Two draft weevil (family Curculionidae) genomes constructed from short reads have been deposited in the NCBI database.
 The coffee berry borer, *Hypothenemus hampei*, has a draft genome size of 163 MB [@vegaDraftGenomeMost2015], and the mountain pine beetle, *Dendroctonus ponderosae*, has a draft genome size of 202 MB in males and 213 MB in females [@keelingDraftGenomeMountain2013].
-Draft genomes incorprating long reads have been deposited for the red palm weevil (*Rhynchophorus ferrugineus*; [GCA_012979105.1](https://www.ncbi.nlm.nih.gov/assembly/GCA_012979105.1/)) and the rice weevil (*Sitophilus oryzae*; [GCF_002938485.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_002938485.1/)).
-The long-read genomes are 782 MB and 771 MB, respectively, suggesting that long-read assemblies capture more of the genome, presumably because longer repeat regions can be assembled.
-Our final genome  of 1.1 GB is larger than other available weevil genomes, although it is draft quality and we expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
+Draft genomes that incorporate long reads have been deposited for the red palm weevil (*Rhynchophorus ferrugineus*; [GCA_012979105.1](https://www.ncbi.nlm.nih.gov/assembly/GCA_012979105.1/)) and the rice weevil (*Sitophilus oryzae*; [GCF_002938485.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_002938485.1/)).
+These assemblies are 782 MB and 771 MB, respectively.
+Assemblies using long reads capture more of the genome, presumably because larger repeat regions can be assembled.
+Our Argentine stem weevil genome of 1.1 GB is larger than other available weevil genomes, although the contiguity statistics and BUSCO scores indicate draft quality.
+We expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
 Short-read genome assembly was not effective for this species because of the extreme repeat content.
 Our final draft assembly had a repeat content of **67.8%** (Table 1), with a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp.
 The non-repetitive regions had an *N*~50~ length of 1066 bp.
