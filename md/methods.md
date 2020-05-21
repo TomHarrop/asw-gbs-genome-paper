@@ -2,13 +2,31 @@
 
 ### Weevil sampling
 
-**Stephen, I need these details from your team please**:
-
-- weevil collection details for geographic survey
-- collection and processing/dissection details for parasitised *vs*. unparasitised expt
-
+We collected regional ASW samples from commercially-farmed ryegrass / white clover (*Trifolium repens* L.) (Fabaceae: Fabales) pastures using a suction device to collect ground litter (Table 1).
+Weevils were extracted from the litter in the laboratory.
 The map in Figure 1 was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
 [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
+
+For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (Table 1) in August, 2017.
+These samples were dissected as per Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
+After dissection, heads were removed and used for genotyping.
+
+: **Table 1**. 
+Weevil collection locations (see also Figure 1).  
+n.d.: not determined.
+
+| Location      | GPS co-ordinates (lat, lon)           | Date collected | Parasitism (%) |
+|----------:|-----|-----|-----|
+| Coromandel    | -37.20194, 175.59417 | June 2015 | 19       |
+| Ruakura       | -37.76750, 175.32361 | June 2015 | 17       |
+| Taranaki      | -39.61500, 174.30278 | July 2015 | 21       |
+| Wellington    | -41.13647, 175.35163 | July 2015 | 42       |
+| Greymouth     | -42.89506, 172.71926 | September 2016 | 36       |
+| Lincoln       | -43.64397, 172.44292 | July 2014 | 19       |
+| Ophir         | -45.10955, 169.58753 |  August 2017 | n.d.        |
+| Mararoa Downs | -45.50672, 167.97596 | May 2016 | < 5         |
+| Mossburn      | -45.66966, 168.23884 | January 2016 | 0        |
+| Fortrose      | -46.57064, 168.79993 | November 2016       | < 5         |
 
 ### Genome assembly
 
@@ -25,11 +43,16 @@ Amplified DNA was sequenced on 6 R9.4.1 flowcells using a MinION Mk1B sequencer 
 We also extracted high molecular weight DNA from three pools, each of 20 unsexed individuals collected from Ruakura, New Zealand.
 We sequenced this pooled DNA on 5 R9.4.1 flowcells, following the Genomic DNA by Ligation protocol (SQK-LSK109; Oxford Nanopore Technologies).
 We removed adaptor sequences from the long reads with Porechop 0.2.4 ([github.com/rrwick/Porechop](https://github.com/rrwick/Porechop)) and assembled with Flye 2.6 [@kolmogorovAssemblyLongErrorprone2019].
-Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
 All genome assemblies were assessed by size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
 Redundant contigs were removed from the combined, long read assembly with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
-We attempted to use RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the long read genomes, but >500M high-scoring Segment Pairs (HSPs) were identified and RepeatModeler did not finish after running for 4 weeks with 144 GB of physical RAM.
+
+We were not able to estimate repeat content in the full genomes, because RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] identified >500M high-scoring Segment Pairs (HSPs) and did not finish after running for 6 weeks with ~200 GB of physical RAM (results not shown).
+We estimated repeat content by subsetting the assemblies using the leave-one-out alignment method implemented in funannotate clean 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020].
+We then used RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the subset assemblies.
+We identified less than 1 M HSPs in the subset assemblies, so the repeat content of the subset assemblies is an underestimate of the repeat content in the full assemblies.
+
+Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
 ### Reduced-representation genome sequencing, processing and analysis
 

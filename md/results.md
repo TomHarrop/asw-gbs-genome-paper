@@ -5,69 +5,58 @@
 
 To construct a reference for genotyping populations of Argentine stem weevils, we produced a draft assembly of the ASW genome.
 We initially attempted assembly from a single individual using PCR-free, short read sequencing.
-This resulted in a fragmented assembly with low BUSCO scores (Table 1).
+This resulted in a fragmented assembly with low BUSCO scores (Table 2).
 *k*-mer analysis on the raw short reads suggested 2.1 polymorphisms per 100 bp and a genomic repeat content of at least 28% in the individual we sequenced (**Supporting Information**).
 We then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
 We produced 29.8 GB of quality-filtered reads with an *N*~50~ length of 9.0 KB.
-Assembling the single individual, long read genome resulted in improved contiguity and BUSCO scores compared to the short-read assembly (Table 1).
-Consistent with the raw short read data, we detected an **extreme level (how much? RM isn't going to finish)** of repeats in the single individual, long read genome (Table 1).
-To improve assembly across long repeats, we produced a second ONT dataset with longer reads from HMW DNA from two pools of 20 individuals each, without amplification. 
+Assembling the single individual, long read genome resulted in improved contiguity and BUSCO scores compared to the short-read assembly (Table 2).
+Consistent with the raw short read data, the single individual, long read genome was at least 70% repetitive (Table 2).
+To improve assembly across long repeats, we produced a second ONT dataset with longer reads from HMW DNA from two pools of 20 individuals each, without amplification.
 Sequencing these samples on the MinION sequencer produced a total of 12.0 GB of quality-filtered reads with an *N*~50~ length of 19.5 KB.
-Assembling the longer reads generated from the pooled sample alone resulted in a more contiguous genome, but with lower BUSCO scores (Table 1).
+Assembling the longer reads generated from the pooled sample alone resulted in a more contiguous genome, but with lower BUSCO scores (Table 2).
 We constructed a combined, long-read genome using the pooled, long-read dataset for contig construction, and the single-individual, long-read dataset for assembly polishing.
-This improved the BUSCO scores, but produced a large number of redundant contigs (Table 1), presumably because of the high rate of heterozygosity in the pooled, long-read dataset.
-Finally, we used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
+This improved the BUSCO scores, but produced a large number of redundant contigs (Table 2), presumably because of the high rate of heterozygosity in the pooled, long-read dataset.
+We then used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
 This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
 
 <!--
 |----------:|:-----|:-----|:-----|:-----|:-----|
  -->
 
-: **Table 1**.
-Assembly statistics for the final draft genome and intermediate assemblies. n.d.: not determined. x: RepeatModeler has been running for 6 weeks now, it's never going to finish.
+: **Table 2**.
+Assembly statistics for the final draft genome and intermediate assemblies.  
+1. We estimated repeat content from a subset of contigs in the assembly (see Methods).  
+n.d.: not determined.
 
-|                                    | Short read | Single individual, long read | Pooled, long read | Combined, long read | Final draft |
+| | Short read | Single individual, long read | Pooled, long read | Combined, long read | Final draft |
 |----------:|:-----|:-----|:-----|:-----|:-----|
 |               Assembly length (Gb) | 1.3        | 1.2                          | 1.2               | 1.7                 | 1.1         |
 |                            *N*~50~ | 53046      | 4523                         | 2958              | 5281                | 2681        |
 |                *N*~50~ length (kb) | 7.1        | 74.4                         | 112.6             | 86.4                | 122.3       |
 |   Complete, single-copy BUSCOs (%) | 32.7       | 72.2                         | 71.0              | 69.2                | 78.8        |
 | Complete, multiple-copy BUSCOs (%) | 17.2       | 7.5                          | 5.9               | 17.4                | 5.1         |
-|                 Repeat content (%) | n.d.       | x                            | x                 | x                   | ~67.8       |
+|                 Minimum^1^ repeat content (%) | n.d. | 71.0 | 71.4 | 71.4 | 71.3 |
 
-<!-- 
-```table
----
-caption: '**Table 1**. Assembly statistics for the final draft genome and intermediate assemblies. n.d.: not determined.'
-grid_tables: True
-header: True
-alignment: RCCCCC
-table-width: 1
-include: tables/genome_table.csv
----
-```
-
- -->
 ### Genetic variation is associated with geography in NZ populations of Argentine stem weevil 
 
 To measure genetic variation in invasive New Zealand populations of ASW, we collected individuals from 10 sites across the North and South Islands of New Zealand (Figure 1A).
-We genotyped individuals with a modified genotyping-by-sequencing (GBS) protocol [@elshireRobustSimpleGenotypingbySequencing2011].
+We genotyped 183 individuals with a modified genotyping-by-sequencing (GBS) protocol [@elshireRobustSimpleGenotypingbySequencing2011].
 After strict trimming and filtering of the raw GBS data, we mapped reads from each individual against our draft genome and used gstacks to assemble loci [@catchenStacksAnalysisTool2013].
 For analysis, we removed loci with more than two alleles, minor allele frequency less than 0.05, or missing genotypes in more than 20% of individuals.
 We also removed individuals missing genotypes at more than 20% of loci.
-The complete dataset comprised 7--15 individuals per location (total 116), genotyped at 52,051 biallelic SNPs.
+The filtered dataset comprised 7--15 individuals per location (total 116), genotyped at 52,051 biallelic SNPs.
 The mean observed heterozygosity ranged from 0.18--0.21 across populations (Figure 1B), and pairwise *F*~ST~ values between populations ranged from 0.024--0.051 (Figure 1C).
 For principal components analysis (PCA), we pruned the dataset to 18,715 biallelic SNPs that were not in linkage disequilibrium, using an r^2^ threshold of 0.1.
 PCA of genotypes at these sites revealed overlapping populations of ASW, with 9.2% of total variance explained by the first two components (Figure 1D).
-These results suggest that NZ populations of ASW are highly heterozygous, but the variation is not highly structured between populations, consistent with a large effective population size and high gene flow between populations.
-We used discriminant analysis of principal components (DAPC) on the same set of pruned SNPs to find genetic variability associated with differences between populations [@jombartDiscriminantAnalysisPrincipal2010].
-The major linear discriminant, which explains 96.7% of between-population variation, separates populations from North and South of the Alpine divide (Figure 1E), although admixture was evident in all populations except Lincoln (Figure 1F).
-This indicates a degree of genetic isolation between populations from North and South of the Alpine divide.
+These populations of ASW are highly heterozygous, but the low proportion of total variance explained by the major principal components suggests that variation is not highly structured between populations.
+This is consistent with a large effective population size and gene flow between populations.
+To find variance between populations, we used discriminant analysis of principal components (DAPC) on the same set of pruned SNPs [@jombartDiscriminantAnalysisPrincipal2010].
+The major linear discriminant, which explains 96.7% of between-population variation, separates populations from North and South of the Main Divide (Figure 1E), although we found evidence of mixing in all populations except Lincoln (Figure 1F).
+Although the PCA suggests that the majority of the total variance is not structured, the DAPC indicates a degree of genetic isolation between populations from North and South of the Main Divide.
 
 ![
 **Figure 1.** Caption next page.
 ](fig/figure_1.pdf)
-
 
 \beginfigurecaption
 
@@ -75,20 +64,20 @@ This indicates a degree of genetic isolation between populations from North and 
 Genetic diversity in NZ populations of Argentine stem weevil.
 **A** Weevil sampling locations.
 We collected Argentine stem weevils from 4 locations in the North Island and 6 locations in the South Island of New Zealand.
-Greymouth is in the South island, but North of the Alpine divide.
+Greymouth is in the South Island, but North of the Main Divide, which runs along the Southern Alps and divides the South Island.
 The number of weevils genotyped from each location is shown on the map.
 Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 **B** Mean observed heterozygosity for each population.
 **C** Pairwise *F*~ST~ values between populations.
-**D**  Principal components analysis (PCA) and **E** discriminant analysis of principle components (DAPC) of 116 individuals genotyped at 18,715 biallelic sites.
-**D** The populations overlap on the first two principal components (PC1 and PC2), but weevils sampled from higher latitudes have lower scores on PC1.
+**D**  Principal components analysis (PCA) describing total variability and **E** discriminant analysis of principle components (DAPC) describing between-population variability of 116 individuals genotyped at 18,715 biallelic sites.
+In the PCA (**D**), populations overlap on the first two principal components (PC1 and PC2), but weevils sampled from higher latitudes have lower scores on PC1.
 PC1 and PC2 together explain 9.2% of variance in the dataset, indicating a high level of unstructured genetic variation in weevil populations.
-**E** Linear discriminant 1 (LD1) explains 96.7% of between-group variability.
-Individuals from North of the Alpine divide have negative coordinates on LD1, whilst individuals from South of the Alpine divide have positive coordinates.
+In the DPAC (**E**), the major linear discriminant (LD1) explains 96.7% of between-group variability.
+LD1 splits individuals from North and South of the Main Divide.
 LD2 separates Lincoln individuals from other individuals.
 **F** Posterior probability of group assignment for each individual.
-All populations contain individuals with high posterior probabilities of membership to other populations, consistent with admixture (**?**).
-We did not detect admixture between populations from North and South of the Alpine divide.
+All populations contain individuals with high posterior probabilities of membership to other populations, consistent with gene flow between populations.
+We did not detect evidence of gene flow between populations from North and South of the Main Divide.
 Individuals sampled from Lincoln had the lowest posterior probabilities of membership to other populations.
 
 \endfigurecaption
@@ -96,10 +85,19 @@ Individuals sampled from Lincoln had the lowest posterior probabilities of membe
 ### Genetic variation is not associated with parasitism by *M. hyperodae*
 
 To detect large-effect variants associated with susceptibility to parasitism by *M. hyperodae*, we genotyped weevils that had also been tested for the presence of a parasitoid larva.
-We used a total of 179 individuals, collected from Lincoln, New Zealand, and Ruakura, New Zealand, because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
+We used a total of 200 individuals, collected from Lincoln and Ruakura (Table 3), because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
 The weevils were examined for a parasitoid larva and genotyped at the same loci used for the geographical survey.
-After filtering and pruning sites in linkage disequilibrium, we used 19,482 SNPs for PCA and DAPC.
+After filtering and pruning sites in linkage disequilibrium, we used 19,482 SNPs for PCA and DAPC in 95 parasitised inviduals and 84 individuals where a parasitoid was not detected (Table 3).
 We did not detect any genetic differentiation associated with the presence of a parasitoid, either within populations or between populations, or any evidence of skewed allele frequencies in these groups using BayeScan (lowest *Q*-value 0.97).
+
+: **Table 3**. Number of parasitised and unparasitised weevils from Ruakura and Lincoln.
+
+| Location | Parasitoid | Number genotyped | Number after filtering |
+|----------:|----------|-----|-----|
+| Ruakura | Present | 50 | 46 |
+| Ruakura | Not detected | 50 | 40 |
+| Lincoln | Present | 50 | 49 |
+| Lincoln | Not detected | 50 | 44 |
 
 >>>
 @ Marissa and Peter - there are some contigs that come up using XPEHH for these groups.
@@ -109,10 +107,10 @@ I think the XPEHH results might be spurious because the low number of markers pe
 I've left them in this version to get your thoughts.
 
 
-### Genetic differentiation between ASW populations North and South of the Alpine divide
+### Genetic differentiation between ASW populations North and South of the Main Divide
 
 Although we did not detect variation associated with presence of a parasitoid, parasitism rate varies across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
-To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Alpine divide (Figure 1).
+To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Main Divide (Figure 1).
 The two groups had a mean *F*~ST~ of 0.013.
 We detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome with BayeScan (Figure 2).
 The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 2).
@@ -124,10 +122,10 @@ None had characterized functions in insects.
 
 ![
 **Figure 2**.
-**A** Regions of the draft ASW genome that have altered allele frequencies between populations from North and South of the Alpine divide.
+**A** Regions of the draft ASW genome that have altered allele frequencies between populations from North and South of the Main Divide.
 47 SNPs on 24 contigs have altered allele frequencies, using the arbitrary *Q*-value cutoff of 0.01.
 **B** Models of population demographics and results (in progress).
-](/home/tom/Projects/stacks-asw/test_bs/bs_plot.pdf)
+](fig/single_contig_fst.pdf)
 
 \clearpage
 

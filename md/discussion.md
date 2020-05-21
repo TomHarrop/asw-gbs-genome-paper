@@ -23,7 +23,7 @@ Assemblies using long reads capture more of the genome, presumably because large
 Our Argentine stem weevil genome of 1.1 GB is larger than other available weevil genomes, although the contiguity statistics and BUSCO scores indicate draft quality.
 We expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
 Short-read genome assembly was not effective for this species because of the extreme repeat content.
-Our final draft assembly had a repeat content of **67.8%** (Table 1), with a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp.
+Our final draft assembly had a repeat content of at least 70% (Table 1), with **a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp. (check)**
 The non-repetitive regions had an *N*~50~ length of 1066 bp.
 The heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
 The high number of multiple-copy genes in the combined, long read genome highlights the difficulty of assembling repetitive genomes from small, heterozygous organisms.

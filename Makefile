@@ -3,14 +3,12 @@ all: ms_word pdf
 ms_word: manuscript.docx
 pdf: manuscript.pdf
 
-# 		-F pantable \
-
 
 manuscript.docx: md/front_matter.md md/abstract.md md/introduction.md md/methods.md md/results.md md/discussion.md md/end_matter.md md/ref_loc.md ref/ASW.bib ref/insects_doi.csl ref/ref.docx
 	pandoc \
 		--from=markdown \
 		--to=docx \
- 		--reference-doc=ref/ref.docx \
+		--reference-doc=ref/ref.docx \
 		--bibliography=ref/ASW.bib \
 		--csl=ref/insects_doi.csl \
 		-o manuscript.docx \
