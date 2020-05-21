@@ -9,15 +9,19 @@ This indicates that genetic variation in both host and target need to be monitor
 **Para on demographics goes here (or not)**.
 
 Despite the increased resolution of GBS compared to traditional markers, we did not detect regions of the genome associated with parasitism by *M. hyperodae*.
-Possible explanations for this include that 
+Possible reasons for this include one or more of the following:
 *i.* resistance to biocontrol may not be genetic;
 *ii.* resistance may be encoded by part of the genome not captured in our assembly;
-*iii.* manual detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals; 
+*iii.* microscopic detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals; 
 or *iv.* resistance is encoded by multiple regions of small effect, which we were unable to detect in our study.
-A combination of these effects may influence resistance, but our data is most consistent with *iv*.
-We detected a large amount of standing variation in ASW populations, and polygenic response on standing variation is consistent with the low level of selection by the biocontrol agent [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
+In model organisms, adaptive evolution in response to selective agents acting within the survivability distribution of a population takes the form of polygenic responses on standing variation [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
+The highest reported parasitism rate of ASW by *M. hyperodae* is 90% [@barkerEarlyImpactEndoparasitoid2006], implying that selection by *M. hyperodae* is within the survivability distribution of ASW populations.
+We detected a large amount of standing variation in our survey of ASW populations, which may encode phenotypic variation in parasitism survivability.
+For these reasons, we suggest that a polygenic response is the most probable scenario.
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
+
+**Stephen - I've tried to spell the above paragraph out a bit more explicitly. Is it unclear, or do you disagree with the argument?**
 
 Two draft weevil (family Curculionidae) genomes constructed from short reads have been deposited in the NCBI database.
 The coffee berry borer, *Hypothenemus hampei*, has a draft genome size of 163 MB [@vegaDraftGenomeMost2015], and the mountain pine beetle, *Dendroctonus ponderosae*, has a draft genome size of 202 MB in males and 213 MB in females [@keelingDraftGenomeMountain2013].
