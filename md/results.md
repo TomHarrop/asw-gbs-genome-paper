@@ -46,7 +46,7 @@ For analysis, we removed loci with more than two alleles, minor allele frequency
 We also removed individuals missing genotypes at more than 20% of loci.
 The filtered dataset comprised 7--15 individuals per location (total 116), genotyped at 52,051 biallelic SNPs.
 The mean observed heterozygosity ranged from 0.18--0.21 across populations (Figure 1B), and pairwise *F*~ST~ values between populations ranged from 0.024--0.051 (Figure 1C).
-For principal components analysis (PCA), we pruned the dataset to 18,715 biallelic SNPs that were not in linkage disequilibrium, using an r^2^ threshold of 0.1.
+For principal components analysis (PCA), we pruned the dataset to 18,715 biallelic SNPs that were not in linkage disequilibrium, using a correlation threshold of 0.1.
 PCA of genotypes at these sites revealed overlapping populations of ASW, with 9.2% of total variance explained by the first two components (Figure 1D).
 These populations of ASW are highly heterozygous, but the low proportion of total variance explained by the major principal components suggests that variation is not highly structured between populations.
 This is consistent with a large effective population size and gene flow between populations.
@@ -85,8 +85,8 @@ Individuals sampled from Lincoln had the lowest posterior probabilities of membe
 ### Genetic variation is not associated with parasitism by *M. hyperodae*
 
 To detect large-effect variants associated with susceptibility to parasitism by *M. hyperodae*, we genotyped weevils that had also been tested for the presence of a parasitoid larva.
-We used a total of 200 individuals, collected from Lincoln and Ruakura (Table 3), because of the decline in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
-The weevils were examined for a parasitoid larva and genotyped at the same loci used for the geographical survey.
+We used a total of 200 individuals, collected from Lincoln and Ruakura (Table 3), because of declines in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
+The weevils were examined for a parasitoid larva and genotyped at the same loci used for the geographical diversity survey.
 After filtering and pruning sites in linkage disequilibrium, we used 19,482 SNPs for PCA and DAPC in 95 parasitised inviduals and 84 individuals where a parasitoid was not detected (Table 3).
 We did not detect any genetic differentiation associated with the presence of a parasitoid, either within populations or between populations, or any evidence of skewed allele frequencies in these groups using BayeScan (lowest *Q*-value 0.97).
 
@@ -109,13 +109,13 @@ I've left them in this version to get your thoughts.
 
 ### Genetic differentiation between ASW populations North and South of the Main Divide
 
-Although we did not detect variation associated with presence of a parasitoid, parasitism rate varies across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
+Although we did not detect variation associated with presence of a parasitoid, parasitism rates vary across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
 To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Main Divide (Figure 1).
 The two groups had a mean *F*~ST~ of 0.013.
 We detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome with BayeScan (Figure 2).
 The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 2).
 Using an orthogonal method, 32 SNPs across 5 contigs had outlying cross-population extended haplotype homozygosity (XPEHH) scores [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012].
-Both methods identified putative SNPs under selection an overlapping region on contig_40523.
+Both methods identified putative SNPs under selection in an overlapping region on contig_40523.
 These sites had high α values and positive XPEHH scores, suggesting diversifying selection in the North group.
 We identified four genes on contig_40523.
 None had characterized functions in insects.

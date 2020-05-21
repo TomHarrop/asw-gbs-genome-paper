@@ -1,17 +1,21 @@
 ## Discussion
 
-The purpose of this work was to investigate the relationship between genetic variation and resistance to biocontrol in New Zealand populations of Argentine stem weevil.
+The purpose of this work was to investigate the relationship between genetic variation and resistance to *M. hyperodae* in New Zealand populations of ASW.
 Previous reports using randomly amplified polymorphic DNA (RAPD) markers and *cytochrome C oxidase subunit I* (*COI*) sequencing suggested a high degree of genetic similarity and identified a single *COI* haplotype in New Zealand populations [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013].
 In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approach reveal a high level of genetic diversity within and between populations.
-We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, which we expect to be exacerbated by asexual reproduction in *M. hyperodae*.
+We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, which we expect to be exacerbated by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
 This indicates that genetic variation in both host and target need to be monitored with high-resolution genotyping to maintain success of biological control.
 
 **Para on demographics goes here (or not)**.
 
 Despite the increased resolution of GBS compared to traditional markers, we did not detect regions of the genome associated with parasitism by *M. hyperodae*.
-Resistance to biocontrol may not be genetic, or manual detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals.
-We suggest that resistance to *M. hyperodae* is encoded by multiple regions of small effect, selected from the high amount of standing variation we detected in ASW populations.
-A polygenic response on standing variation is consistent with the low level of selection by the biocontrol agent [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
+Possible explanations for this include that 
+*i.* resistance to biocontrol may not be genetic;
+*ii.* resistance may be encoded by part of the genome not captured in our assembly;
+*iii.* manual detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals; 
+or *iv.* resistance is encoded by multiple regions of small effect, which we were unable to detect in our study.
+A combination of these effects may influence resistance, but our data is most consistent with *iv*.
+We detected a large amount of standing variation in ASW populations, and polygenic response on standing variation is consistent with the low level of selection by the biocontrol agent [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
 
