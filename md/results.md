@@ -18,6 +18,8 @@ We constructed a combined, long-read genome using the pooled, long-read dataset 
 This improved the BUSCO scores, but produced a large number of redundant contigs (Table 2), presumably because of the high rate of heterozygosity in the pooled, long-read dataset.
 We then used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
 This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
+The final draft assembly had a repeat content of at least 70% (Table 1), with a maximum repeat size of 30.4 kb and a repeat *N*~50~ length of 494 bp.
+The non-repetitive regions had an *N*~50~ length of 1066 bp.
 
 <!--
 |----------:|:-----|:-----|:-----|:-----|:-----|

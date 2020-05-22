@@ -28,13 +28,10 @@ The coffee berry borer, *Hypothenemus hampei*, has a draft genome size of 163 MB
 Draft genomes that incorporate long reads have been deposited for the red palm weevil (*Rhynchophorus ferrugineus*; [GCA_012979105.1](https://www.ncbi.nlm.nih.gov/assembly/GCA_012979105.1/)) and the rice weevil (*Sitophilus oryzae*; [GCF_002938485.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_002938485.1/)).
 These assemblies are 782 MB and 771 MB, respectively.
 Assemblies using long reads capture more of the genome, presumably because larger repeat regions can be assembled.
-Our Argentine stem weevil genome of 1.1 GB is larger than other available weevil genomes, although the contiguity statistics and BUSCO scores indicate draft quality.
-We expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
-Short-read genome assembly was not effective for this species because of the extreme repeat content.
-Our final draft assembly had a repeat content of at least 70% (Table 1), with **a maximum repeat size of 17.7 kb and a repeat *N*~50~ length of 485 bp. (check)**
-The non-repetitive regions had an *N*~50~ length of 1066 bp.
-The heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
-The high number of multiple-copy genes in the combined, long read genome highlights the difficulty of assembling repetitive genomes from small, heterozygous organisms.
+Our ASW genome of 1.1 GB is larger than other available weevil genomes, and has a high proportion of repetitive sequences.
+The contiguity statistics and BUSCO scores indicate draft quality, and we expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
+Our attempt at short-read assembly of the Argentine stem weevil genome was not effective because of the extreme repeat content, and the heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
+This is highlighed by the number of multiple-copy genes in the combined, long read assembly.
 Our assembly strategy of contig construction with the longest reads, followed by assembly polishing with long reads from a single individual, and then redundant contig removal with PCR-free short reads from another single individual allowed us to improve the contiguity and completeness of the stem weevil genome whilst managing the number of redundant contigs (Table 1).
 
 **Conclusion (let's see what demographics say)**
