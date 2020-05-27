@@ -13,8 +13,8 @@ All authors have read and agreed to the published version of the manuscript.
 ### Acknowledgements
 
 - **Stephen, please add your dissection crew here (or to author list)**
-- Diane Barton and Colin Ferguson for help with collections;
-- Joseph Guhlin for help with funannotate.
+
+We thank Diane Barton and Colin Ferguson (AgResearch, Invermay) for help with weevil collection and identification, and Joseph Guhlin (University of Otago & Genomics Aotearoa) for help with annotation of the ASW genome.
 
 ### Data availability
 

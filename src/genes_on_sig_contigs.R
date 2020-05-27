@@ -3,8 +3,6 @@
 library(data.table)
 library(ggplot2)
 
-
-
 # pick a qval cutoff
 fdr_cutoff <- 1e-2
 
@@ -83,14 +81,54 @@ x <- merge(phyp_dt, entry_list, by.x = "sig_id", by.y = "ENTRY_AC")
 setorder(x, padj, na.last = TRUE)
 x[!is.na(padj)]
 
-all the eggnogs are ENOG41
+# all the eggnogs are ENOG41
 # eggnog = sig_annot[, .(
 #     id = unlist(strsplit(EggNog, ";", fixed = TRUE))),
 #     by = GeneID])
 
 
+# get the closest gene to each sig snp
 
 
+
+my_chrom <- "contig_1196"
+my_snp <- 393177
+my_id <- "28752:63:-"
+
+GetClosestGene <- function(my_chrom, my_snp, my_id, annot) {
+    chrom_cds <- annot[Contig == my_chrom & Feature == "CDS"]
+    chrom_cds[, snp_distance := abs(my_snp - as.integer(Start + (Stop - Start)/2))]
+    chrom_cds[, c("snp_loc", "snp_id") := .(my_snp, my_id)]
+    return(chrom_cds)
+}
+
+snp_to_genes <- bs_loci[
+    qval < fdr_cutoff,
+    GetClosestGene(my_chrom = chrom,
+                   my_snp = pos,
+                   my_id = id,
+                   annot = annot),
+    by = id]
+
+i <- snp_to_genes[, .I[which.min(snp_distance)], by = id][, V1]
+
+closest_per_snp <- snp_to_genes[i]
+
+a_row <-closest_per_snp[1]
+out_file <- "blah.fa"
+
+closest_per_snp[, z := t(list(paste(">", GeneID), Translation))]
+
+WriteFa <- function(a_row, out_file){
+    print(a_row)
+    write(paste(">", a_row[, GeneID]), out_file, append = TRUE)
+    write(a_row[, Translation], out_file, append = TRUE)
+}
+
+unique(closest_per_snp, by = "GeneID")[
+    , WriteFa(a_row = .SD, out_file = "blah.fa"), by = id]
+
+closest_per_snp[, summary(snp_distance)]
 
 
 # add chrom length during summary

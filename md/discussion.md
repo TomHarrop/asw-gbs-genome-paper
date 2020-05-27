@@ -1,12 +1,18 @@
 ## Discussion
 
-The purpose of this work was to investigate the relationship between genetic variation and resistance to *M. hyperodae* in New Zealand populations of ASW.
+The purpose of this work was to investigate genetic variation in New Zealand populations of ASW and its possible relationship to resistance to *M. hyperodae*.
 Previous reports using randomly amplified polymorphic DNA (RAPD) markers and *cytochrome C oxidase subunit I* (*COI*) sequencing suggested a high degree of genetic similarity and identified a single *COI* haplotype in New Zealand populations [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013].
 In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approach reveal a high level of genetic diversity within and between populations.
 We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, which we expect to be exacerbated by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
 This indicates that genetic variation in both host and target need to be monitored with high-resolution genotyping to maintain success of biological control.
 
-**Para on demographics goes here (or not)**.
+ASW was thought to have arrived in New Zealand in the early 20^th^ century, probably via trade in pasture seeds or hay used for feed during stock transit [@brookingSilencesGrassRetrieving2007].
+The earlier reports of low genetic diversity, based on traditional molecular markers [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013],  suggested a limited incursion followed by dispersal and expansion.
+Our results provide three main pieces of evidence to update the proposed history of ASW incursion in New Zealand.
+The high heterozygosity across populations could be explained by a large initial incursion, repeated introductions, and/or an unusually high mutation rate.
+The genetic differentiation between populations from North and South of the Main Divide suggest that migration is low or absent between these regions.
+Our demographic modelling suggests that the most likely scenario is separate introductions from the same source population to North and South of the Main Divide, accompanied by a moderate reduction in population size and subsequent expansion **!!! TBC !!!**.
+The power to resolve the possible evolutionary histories that led to the current population structure of New Zealand weevils was provided by the increased resolution of genome-wide genotyping.
 
 Despite the increased resolution of GBS compared to traditional markers, we did not detect regions of the genome associated with parasitism by *M. hyperodae*.
 Possible reasons for this include one or more of the following:
@@ -21,9 +27,7 @@ For these reasons, we suggest that a polygenic response is the most probable sce
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
 
-**Stephen - I've tried to spell the above paragraph out a bit more explicitly. Is it unclear, or do you disagree with the argument?**
-
-Two draft weevil (family Curculionidae) genomes constructed from short reads have been deposited in the NCBI database.
+Two draft weevil (family Curculionidae) genomes constructed from short reads have been deposited in the NCBI Genome database.
 The coffee berry borer, *Hypothenemus hampei*, has a draft genome size of 163 MB [@vegaDraftGenomeMost2015], and the mountain pine beetle, *Dendroctonus ponderosae*, has a draft genome size of 202 MB in males and 213 MB in females [@keelingDraftGenomeMountain2013].
 Draft genomes that incorporate long reads have been deposited for the red palm weevil (*Rhynchophorus ferrugineus*; [GCA_012979105.1](https://www.ncbi.nlm.nih.gov/assembly/GCA_012979105.1/)) and the rice weevil (*Sitophilus oryzae*; [GCF_002938485.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_002938485.1/)).
 These assemblies are 782 MB and 771 MB, respectively.
@@ -34,4 +38,7 @@ Our attempt at short-read assembly of the Argentine stem weevil genome was not e
 This is highlighed by the number of multiple-copy genes in the combined, long read assembly.
 Our assembly strategy of contig construction with the longest reads, followed by assembly polishing with long reads from a single individual, and then redundant contig removal with PCR-free short reads from another single individual allowed us to improve the contiguity and completeness of the stem weevil genome whilst managing the number of redundant contigs (Table 1).
 
-**Conclusion (let's see what demographics say)**
+### Conclusion
+
+Our results show that New Zealand populations have a large amount of heterozygosity, and we suggest that this allowed them to evolve resistance to their biological control agent.
+This highlights the need for monitoring biological control systems by genome-wide genotyping.

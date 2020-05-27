@@ -4,10 +4,11 @@
 
 We collected regional ASW samples from commercially-farmed ryegrass / white clover (*Trifolium repens* L.) (Fabaceae: Fabales) pastures using a suction device to collect ground litter (Table 1).
 Weevils were extracted from the litter in the laboratory.
-The map in Figure 1 was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
+The locations are also illustrated in Figure 1.
+The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
 [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 
-For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (Table 1) in August, 2017.
+For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (as in Table 1) in August, 2017.
 These samples were dissected as per Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
 After dissection, heads were removed and used for genotyping.
 
@@ -56,9 +57,7 @@ Reproducible code for assembling and assessing the long-read ASW genomes is host
 
 ### Reduced-representation genome sequencing, processing and analysis
 
-**Jeanne, I need these details from your team please**:
-
-- details on DNA extraction, GBS pipeline and sequencing
+**Jeanne, can you please add details on DNA extraction, GBS pipeline and sequencing?**
 
 All the code we used to process the raw reads, assemble loci and run downstream analyses is hosted at [github.com/TomHarrop/stacks-asw](https://github.com/TomHarrop/stacks-asw), including the parameters and software containers for each step.
 
@@ -70,14 +69,14 @@ All remaining reads were truncated to 80 b to account for unmatched adaptor sequ
 To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
 We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksAnalysisTool2013].
 
-For analysis, we used bcftools [ref?] to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
+For analysis, we used bcftools to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
 After filtering loci, we also removed individuals that were missing genotypes at more than 20% of loci.
 We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
 We used plink 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015].
 We used PGDSpider 2.1.1.5 [@lischerPGDSpiderAutomatedData2012] to convert the un-pruned dataset for detection of loci under selection with BayeScan 2.1 [@follGenomeScanMethodIdentify2008].
-After statistically phasing SNPs from the un-pruned dataset with SHAPEIT v2 r904 [@delaneauLinearComplexityPhasing2012], we analysed cross-population extended haplotype homozygosity with the R package rehh 3.1.0 [@gautierRehhReimplementationPackage2017].
+We analysed cross-population extended haplotype homozygosity with the R package rehh 3.1.0 [@gautierRehhReimplementationPackage2017].
 For demographic analysis, we converted the pruned dataset to site frequency spectra using easysfs commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS), and tested demographic models using 
-**fastsimcoal2 2.6 (tbc)** [@excoffierRobustDemographicInference2013].
+fastsimcoal2 2.6 [@excoffierRobustDemographicInference2013].
 
 ### Reproducibility and data availability
 

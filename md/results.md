@@ -18,7 +18,7 @@ We constructed a combined, long-read genome using the pooled, long-read dataset 
 This improved the BUSCO scores, but produced a large number of redundant contigs (Table 2), presumably because of the high rate of heterozygosity in the pooled, long-read dataset.
 We then used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
 This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
-The final draft assembly had a repeat content of at least 70% (Table 1), with a maximum repeat size of 30.4 kb and a repeat *N*~50~ length of 494 bp.
+The final draft assembly had a repeat content of at least 70% (Table 2), with a maximum repeat size of 30.4 kb and a repeat *N*~50~ length of 494 bp.
 The non-repetitive regions had an *N*~50~ length of 1066 bp.
 
 <!--
@@ -74,7 +74,7 @@ Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativ
 **D**  Principal components analysis (PCA) describing total variability and **E** discriminant analysis of principle components (DAPC) describing between-population variability of 116 individuals genotyped at 18,715 biallelic sites.
 In the PCA (**D**), populations overlap on the first two principal components (PC1 and PC2), but weevils sampled from higher latitudes have lower scores on PC1.
 PC1 and PC2 together explain 9.2% of variance in the dataset, indicating a high level of unstructured genetic variation in weevil populations.
-In the DPAC (**E**), the major linear discriminant (LD1) explains 96.7% of between-group variability.
+In the DAPC (**E**), the major linear discriminant (LD1) explains 96.7% of between-group variability.
 LD1 splits individuals from North and South of the Main Divide.
 LD2 separates Lincoln individuals from other individuals.
 **F** Posterior probability of group assignment for each individual.
@@ -83,6 +83,8 @@ We did not detect evidence of gene flow between populations from North and South
 Individuals sampled from Lincoln had the lowest posterior probabilities of membership to other populations.
 
 \endfigurecaption
+
+\clearpage
 
 ### Genetic variation is not associated with parasitism by *M. hyperodae*
 
@@ -101,107 +103,96 @@ We did not detect any genetic differentiation associated with the presence of a 
 | Lincoln | Present | 50 | 49 |
 | Lincoln | Not detected | 50 | 44 |
 
->>>
-@ Marissa and Peter - there are some contigs that come up using XPEHH for these groups.
-There's a contig (contig_11238) full of transcription factors with a single locus that has a high positive XPEHH score, but this would suggest selection in the *parasitised* group.
-There is one contig (contig_5955) with a large negative XPEHH (selection in non-parasitised group) but the genes are not interesting.
-I think the XPEHH results might be spurious because the low number of markers per contig lead to dodgy phasing, so I'm thinking of removing XPEHH from the following section.
-I've left them in this version to get your thoughts.
-
-
 ### Genetic differentiation between ASW populations North and South of the Main Divide
 
 Although we did not detect variation associated with presence of a parasitoid, parasitism rates vary across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
 To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Main Divide (Figure 1).
 The two groups had a mean *F*~ST~ of 0.013.
 We detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome with BayeScan (Figure 2).
-The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 2).
-Using an orthogonal method, 32 SNPs across 5 contigs had outlying cross-population extended haplotype homozygosity (XPEHH) scores [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012].
-Both methods identified putative SNPs under selection in an overlapping region on contig_40523.
-These sites had high α values and positive XPEHH scores, suggesting diversifying selection in the North group.
-We identified four genes on contig_40523.
-None had characterized functions in insects.
+The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 4).
+The SNPs identified by BayeScan were an average of 11.5 kb from the nearest genes.
+None of the closest genes were homologous to genes with characterized functions in insects.
+Using an additional method, 3 SNPs on another contig had outlying cross-population extended haplotype homozygosity (XPEHH) scores (Table 4; [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012]).
+No common regions were identified by both methods.
 
 ![
 **Figure 2**.
-**A** Regions of the draft ASW genome that have altered allele frequencies between populations from North and South of the Main Divide.
-47 SNPs on 24 contigs have altered allele frequencies, using the arbitrary *Q*-value cutoff of 0.01.
-**B** Models of population demographics and results (in progress).
-](fig/single_contig_fst.pdf)
+Distribution of SNPs that are associated with altered allele frequencies between populations from North and South of the Main Divide over 24 contigs.
+47 SNPs have altered allele frequencies, using the arbitrary *Q*-value cutoff of 0.01.
+](fig/figure_2.pdf)
 
-\clearpage
+: **Table 4**.
+Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008] (*Q* < 0.01) or cross-population extended haplotype homozygosity (XPEHH) analysis [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012] (-log~10~*p* > 4). α is BayeScan's locus-specific component of *F*~ST~ coefficient [@follGenomeScanMethodIdentify2008]. Positive values suggest diversifying selection. Positive XPEHH scores suggest selection in the South group, and negative scores suggest selection in the North group.
 
-: **Table 2**.
-Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008] (*Q* < 0.01) or cross-population extended haplotype homozygosity (XPEHH) analysis [@sabetiGenomewideDetectionCharacterization2007; @gautierRehhPackageDetect2012] (-log~10~*p* > 4). α is BayeScan's locus-specific component of *F*~ST~ coefficient [@follGenomeScanMethodIdentify2008]. Positive values suggest diversifying selection. Positive XPEHH scores suggest selection in the North group, and negative scores suggest selection in the South group.
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|         Contig | Total | BayeScan | BayeScan region    | α            | XPEHH | XPEHH region     | XPEHH          |
+|                | SNPs  | SNPs     |                    |              | SNPs  |                  |                |
++================+=======+==========+====================+==============+=======+==================+================+
+|   contig_40523 | 26    | 5        | 103,989 -- 111,755 | 1.93 -- 2.14 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_11164 | 23    | 4        | 60,487 -- 179,797  | 1.84 -- 2.05 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+| scaffold_43207 | 11    | 4        | 102,783 -- 102,811 | 1.70 -- 2.14 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_12006 | 10    | 3        | 46,975 -- 47,031   | 2.09 -- 2.15 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_13287 | 10    | 3        | 58,727 -- 58,738   | 1.68 -- 1.98 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_18336 | 20    | 3        | 233,287 -- 342,618 | 1.90 -- 1.99 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_2677 | 22    | 3        | 109,260 -- 110,069 | 1.79 -- 1.99 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_39072 | 10    | 3        | 55,060 -- 55,126   | 2.06 -- 2.14 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_23638 | 6     | 2        | 118,602 -- 118,616 | 2.08 -- 2.15 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_37676 | 17    | 2        | 47,912 -- 47,954   | 2.01 -- 2.03 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_4080 | 13    | 2        | 26,024 -- 26,027   | 1.78 -- 1.79 | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_1196 | 24    | 1        | 393,177            | 1.68         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_12091 | 3     | 1        | 43,431             | 2.02         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_14933 | 7     | 1        | 80,478             | 1.98         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_19450 | 6     | 1        | 37,951             | 2.39         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|     contig_202 | 8     | 1        | 80,251             | 2.03         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_20252 | 20    | 1        | 34,278             | 1.87         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|     contig_205 | 6     | 1        | 28,713             | 2.13         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_21253 | 6     | 1        | 43,048             | 1.76         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_23312 | 12    | 1        | 171,714            | 1.95         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_27115 | 20    | 1        | 111,838            | 1.94         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|   contig_28985 | 6     | 1        | 22,034             | 2.01         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_3057 | 13    | 1        | 272,534            | 1.91         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_8456 | 36    | 1        | 88,819             | 1.92         | 0     |                  |                |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
+|    contig_2544 | 65    | 0        |                    |              | 3     | 83,144 -- 83,595 | -6.46 -- -5.23 |
++----------------+-------+----------+--------------------+--------------+-------+------------------+----------------+
 
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|         Contig | Total | BayeScan | BayeScan region    | α            | XPEHH | XPEHH region       | XPEHH          |
-|                | SNPs  | SNPs     |                    |              | SNPs  |                    |                |
-+================+=======+==========+====================+==============+=======+====================+================+
-|   contig_40523 | 26    | 5        | 103,989 -- 111,755 | 1.93 -- 2.14 | 2     | 111,724 -- 111,783 | 5.34 -- 5.83   |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_11164 | 23    | 4        | 60,487 -- 179,797  | 1.84 -- 2.05 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-| scaffold_43207 | 11    | 4        | 102,783 -- 102,811 | 1.70 -- 2.14 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_2677 | 22    | 3        | 109,260 -- 110,069 | 1.79 -- 1.99 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_18336 | 20    | 3        | 233,287 -- 342,618 | 1.90 -- 1.99 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_12006 | 10    | 3        | 46,975 -- 47,031   | 2.09 -- 2.15 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_13287 | 10    | 3        | 58,727 -- 58,738   | 1.68 -- 1.98 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_39072 | 10    | 3        | 55,060 -- 55,126   | 2.06 -- 2.14 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_37676 | 17    | 2        | 47,912 -- 47,954   | 2.01 -- 2.03 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_4080 | 13    | 2        | 26,024 -- 26,027   | 1.78 -- 1.79 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_23638 | 6     | 2        | 118,602 -- 118,616 | 2.08 -- 2.15 | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_8456 | 36    | 1        | 88,819             | 1.92         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_1196 | 24    | 1        | 393,177            | 1.68         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_20252 | 20    | 1        | 34,278             | 1.87         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_27115 | 20    | 1        | 111,838            | 1.94         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_3057 | 13    | 1        | 272,534            | 1.91         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_23312 | 12    | 1        | 171,714            | 1.95         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|     contig_202 | 8     | 1        | 80,251             | 2.03         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_14933 | 7     | 1        | 80,478             | 1.98         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_19450 | 6     | 1        | 37,951             | 2.39         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|     contig_205 | 6     | 1        | 28,713             | 2.13         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_21253 | 6     | 1        | 43,048             | 1.76         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_28985 | 6     | 1        | 22,034             | 2.01         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|   contig_12091 | 3     | 1        | 43,431             | 2.02         | 0     |                    |                |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_1525 | 45    | 0        |                    |              | 18    | 30,186 -- 47,858   | -9.56 -- -5.17 |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|    contig_5179 | 41    | 0        |                    |              | 9     | 46,573 -- 48,037   | -7.02 -- -5.48 |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|      contig_18 | 52    | 0        |                    |              | 2     | 488,821 -- 488,823 | -6.85 -- -5.39 |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
-|      contig_71 | 22    | 0        |                    |              | 1     | 247,010            | 7.34           |
-+----------------+-------+----------+--------------------+--------------+-------+--------------------+----------------+
+### Separate incursions of ASW into New Zealand
 
-### Repeated/large/separate incursions of ASW into New Zealand
+The genetic differentiation between weevils from North and South of the Main Divide suggests the possibility of either multiple routes of entry, or incursion via a single route of entry followed by isolation and diversification.
+The level of heterozygosity we measured across populations also suggests that incursions were large and/or repeated.
+To test these different possibilities, we simulated site frequency spectra (SFS) under 10 different models of demographic history and compared them to the observed SFS.
+Our models covered single and multiple introductions, with either moderate or strong reduction in effective population size during introduction, and multiple introductions from different source populations (Figure 3).
+**\@all --- our interim results suggest model *iii* (without migration) is the most likely.
+The modelling runs should finish just in time to sneak into the paper.**
 
-This is in progress.
-We're testing 3 main models:
-
-- model 1: single introduction then bottleneck, spread, diversification, and gene flow.
-- model 2: **separate introductions** to North and South, with bottlenecks and gene flow between populations.
-- model 3: separate introductions, then bottlenecks, from **different source populations** to North and South, with bottlenecks and gene flow between populations.
-- all of the above but without bottlenecks to simulate large or repeated incursions.
-
+![
+**Figure 3**.
+Models used to simulate site frequency spectra (SFS) for comparison against the observed SFS.
+Models *i* and *ii* represent introduction via a single route with moderate or large reductions in population size compared to the source population.
+Models *iii* and *iv* represent incursion via two routes, with moderate or large reductions in population size compared to the source population.
+Model *v* represents introduction to different sites from source populations that were isolated prior to introduction.
+All models were tested with and without migration between Northern and Southern populations.
+](fig/models_fig_170.pdf)
