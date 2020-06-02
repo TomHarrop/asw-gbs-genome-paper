@@ -11,7 +11,7 @@ Conventional chemical control of ASW is ineffective, environmentally damaging an
 To complement endophyte-based plant resistance [@johnsonExploitationEpichloaeEndophytes2013; @kauppinenEpichloeGrassEndophytes2016], the solitary wasp *Microctonus hyperodae* Loan (Hymenoptera: Braconidae) was released for biological control of ASW in 1992.
 Within three years of its release, parasitism of ASW by *M. hyperodae* reached 90% [@barkerEarlyImpactEndoparasitoid2006], reducing or eliminating damage by ASW [*e.g.* @barkerEarlyImpactEndoparasitoid2006; @goldsonArgentineStemWeevil2011; @barkerBiologyIntroducedBiocontrol2013].
 
-Although ASW was initially well managed by *M. hyperodae*, suppression of the weevil by *M. hyperodae* began to fail after about 14 generations [@popayCurrentStatusArgentine2011; @goldsonApparentAcquiredResistance2016; @tomasettoIntensifiedAgricultureFavors2017].
+Although ASW was initially well-managed by *M. hyperodae*, suppression of the weevil by *M. hyperodae* began to fail after about 14 generations [@popayCurrentStatusArgentine2011; @goldsonApparentAcquiredResistance2016; @tomasettoIntensifiedAgricultureFavors2017].
 This loss of efficacy may be the result of adaptation in weevil populations resulting from selection pressure by the parasitoid [@goldsonApparentAcquiredResistance2016; @tomasettoIntensifiedAgricultureFavors2017].
 Because ASW reproduces sexually, ASW populations may have greater capacity to evolve than populations of *M. hyperodae*, which reproduces parthenogenetically.
 Empirical modelling of the ASW--*M. hyperodae* interaction indicated that resistance is inevitable when hosts have more genetic variation than their predator [@casanovasAsymmetryReproductionStrategies2018].
