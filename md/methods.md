@@ -55,13 +55,17 @@ We identified less than 1 M HSPs in the subset assemblies, so the repeat content
 
 Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
+We annotated the final, draft assembly with funannotate 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020], using five RNA sequencing libraries generated from abdomens and heads of unparasitised adult ASW collected from Lincoln and Ruakura.
+Reproducible code for annotating the draft ASW genome is hosted at [github.com/TomHarrop/asw-annotate](https://github.com/TomHarrop/asw-annotate).
+
 ### Reduced-representation genome sequencing, processing and analysis
 
-**Jeanne, can you please add details on DNA extraction, GBS pipeline and sequencing?**
+DNA extraction and double digest RADseq [genotyping-by-sequencing, GBS; [@petersonDoubleDigestRADseq2012] were performed by AgResearch, Invermay, New Zealand.
+DNA was extracted from individual weevil heads using the ZR-96 Tissue & Insect DNA Kit (Zymo Research, CA, U.S.A.).
+The DNA was digested with *Ape*KI and *Msp*I and size selected on a BluePippin (Sage Science, MA, U.S.A.) with a window size of 150--500 bp.
+Individual libraries were barcoded and sequencing adaptors were added based on the Elshire method [@elshireRobustSimpleGenotypingbySequencing2011] with modifications [@doddsConstructionRelatednessMatrices2015], and 100 b single-end reads were generated from pooled libraries an Illumina HiSeq 2500 instrument.
 
-All the code we used to process the raw reads, assemble loci and run downstream analyses is hosted at [github.com/TomHarrop/stacks-asw](https://github.com/TomHarrop/stacks-asw), including the parameters and software containers for each step.
-
-Briefly, we used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
+We used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
 Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads, depending on barcode length.
 Reads were trimmed by searching for adaptors with a minimum match of 11 b.
 Reads shorter than 80 b after trimming were discarded.
@@ -72,15 +76,19 @@ We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksA
 For analysis, we used bcftools to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
 After filtering loci, we also removed individuals that were missing genotypes at more than 20% of loci.
 We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
-We used plink 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015].
+We used plink 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015], using the first four principal components.
 We used PGDSpider 2.1.1.5 [@lischerPGDSpiderAutomatedData2012] to convert the un-pruned dataset for detection of loci under selection with BayeScan 2.1 [@follGenomeScanMethodIdentify2008].
 We analysed cross-population extended haplotype homozygosity with the R package rehh 3.1.0 [@gautierRehhReimplementationPackage2017].
-For demographic analysis, we converted the pruned dataset to site frequency spectra using easysfs commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS), and tested demographic models using 
-fastsimcoal2 2.6 [@excoffierRobustDemographicInference2013].
+For demographic analysis, we converted the pruned dataset to minor allele (folded) site frequency spectra using easysfs commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS).
+We estimated likelihood for each demographic model ten times using 
+fastsimcoal2 2.6 [@excoffierRobustDemographicInference2013] with 1 million simulations and 60 optimisation cycles per run.
+We compared model runs using delta likelihood (maximum observed likelihood - maximum estimated likelihood) and Akaike information criteria [@akaikeNewLookStatistical1974].
+
+All the code we used to process the raw reads, assemble loci and run downstream analyses is hosted at [github.com/TomHarrop/stacks-asw](https://github.com/TomHarrop/stacks-asw), including the parameters and software containers for each step.
 
 ### Reproducibility and data availability
 
-Raw sequence data for the ASW genome are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession **TBA**.
+Raw sequence data for the ASW genome assembly and annotation and raw GBS reads are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession **TBA**.
 We used `snakemake` [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and `Singularity` [@kurtzerSingularityScientificContainers2017] to  capture the computing environment.
 Using the code repositories listed in each methods section, the final results can be reproduced from the raw data with a single command using `snakemake` and `Singularity`.
 The source for this manuscript is hosted at [github.com/TomHarrop/asw-gbs-genome-paper](https://github.com/TomHarrop/asw-gbs-genome-paper).

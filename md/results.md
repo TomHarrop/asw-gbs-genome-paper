@@ -42,7 +42,7 @@ n.d.: not determined.
 ### Genetic variation is associated with geography in NZ populations of Argentine stem weevil 
 
 To measure genetic variation in invasive New Zealand populations of ASW, we collected individuals from 10 sites across the North and South Islands of New Zealand (Figure 1A).
-We genotyped 183 individuals with a modified genotyping-by-sequencing (GBS) protocol [@elshireRobustSimpleGenotypingbySequencing2011].
+We genotyped 183 individuals with a modified genotyping-by-sequencing (GBS) protocol [@elshireRobustSimpleGenotypingbySequencing2011; @doddsConstructionRelatednessMatrices2015].
 After strict trimming and filtering of the raw GBS data, we mapped reads from each individual against our draft genome and used gstacks to assemble loci [@catchenStacksAnalysisTool2013].
 For analysis, we removed loci with more than two alleles, minor allele frequency less than 0.05, or missing genotypes in more than 20% of individuals.
 We also removed individuals missing genotypes at more than 20% of loci.
@@ -55,6 +55,7 @@ This is consistent with a large effective population size and gene flow between 
 To find variance between populations, we used discriminant analysis of principal components (DAPC) on the same set of pruned SNPs [@jombartDiscriminantAnalysisPrincipal2010].
 The major linear discriminant, which explains 96.7% of between-population variation, separates populations from North and South of the Main Divide (Figure 1E), although we found evidence of mixing in all populations except Lincoln (Figure 1F).
 Although the PCA suggests that the majority of the total variance is not structured, the DAPC indicates a degree of genetic isolation between populations from North and South of the Main Divide.
+This suggests that the Main Divide, which runs along the Southern Alps and divides the South Island, is the main geographic barrier to ASW populations in New Zealand.
 
 ![
 **Figure 1.** Caption next page.
@@ -191,8 +192,15 @@ The modelling runs should finish just in time to sneak into the paper.**
 ![
 **Figure 3**.
 Models used to simulate site frequency spectra (SFS) for comparison against the observed SFS.
-Models *i* and *ii* represent introduction via a single route with moderate or large reductions in population size compared to the source population.
-Models *iii* and *iv* represent incursion via two routes, with moderate or large reductions in population size compared to the source population.
+**A** 
+Models *i* and *ii* represent introduction via a single route.
+In model *i* the population contracts on introduction and then begins expanding before dispersal.
+In model *ii*, dispersal occurs while the effective population size remains small.
+Models *iii* and *iv* represent multiple routes of entry, with or without reduction in population size compared to the current populations in New Zealand.
 Model *v* represents introduction to different sites from source populations that were isolated prior to introduction.
 All models were tested with and without migration between Northern and Southern populations.
-](fig/models_fig_170.pdf)
+**B** Likelihood estimations from ten runs of each model.
+We used 1 million simulations and 60 optimisation cycles per run [@excoffierRobustDemographicInference2013].
+Runs that ended with a non-finite delta likehood after 1M simulations are shown with an asterisk.
+The models that include a bottleneck after separation of the two populations had the lowest delta likelihoods, and model *iii* (with migration) had the lowest mean delta likelihood across runs.
+](fig/figure_3.pdf)

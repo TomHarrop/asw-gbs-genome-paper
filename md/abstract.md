@@ -16,14 +16,16 @@ New Zealand populations of Argentine stem weevil have high levels of heterozygos
 This implies that Argentine stem weevils were able to evolve more rapidly than its biocontrol agent, which reproduces asexually. 
 These findings show that monitoring genetic diversity in biocontrol agents and their targets is critical for long-term success of biological control.
 
-### Synthesis and applications
+<!-- ### Synthesis and applications
 
 - wider implications and relevance to management or policy
+ -->
 
 ### Keywords
 
-Biological control,
-Invasive species,
-Molecular evolution,
-Argentine stem weevil,
-Naughty weevils,
+Biological control  
+Invasive species  
+Molecular evolution  
+Argentine stem weevil  
+Population genetics  
+<!-- Naughty weevils -->

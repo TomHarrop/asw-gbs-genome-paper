@@ -36,7 +36,8 @@ Our ASW genome of 1.1 GB is larger than other available weevil genomes, and has 
 The contiguity statistics and BUSCO scores indicate draft quality, and we expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
 Our attempt at short-read assembly of the Argentine stem weevil genome was not effective because of the extreme repeat content, and the heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
 This is highlighed by the number of multiple-copy genes in the combined, long read assembly.
-Our assembly strategy of contig construction with the longest reads, followed by assembly polishing with long reads from a single individual, and then redundant contig removal with PCR-free short reads from another single individual allowed us to improve the contiguity and completeness of the stem weevil genome whilst managing the number of redundant contigs (Table 1).
+Our strategy to assemble the ASW genome included contig construction with the longest reads, followed by assembly polishing with long reads from a single individual, and then redundant contig removal with PCR-free short reads from another single individual.
+This allowed us to optimise the contiguity and completeness of the genome whilst managing the number of redundant contigs (Table 1).
 
 ### Conclusion
 

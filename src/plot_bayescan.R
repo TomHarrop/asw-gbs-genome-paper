@@ -73,12 +73,14 @@ gp <- ggplot(pd_lims, aes(x = pos,
         strip.text.x = element_text(angle = 90,
                                     hjust = 1,
                                     vjust = 0.5),
-        panel.background = element_rect(colour = "black")) +
+        panel.background = element_rect(colour = "black"),
+        legend.key.size = unit(0.5, "lines"), 
+        panel.grid.major.x = element_blank()) +
   facet_grid(cols = vars(chrom),
              scales = "free_x",
              space = "free_x",
              switch = "x") +
-  scale_colour_viridis_c() +
+  scale_colour_viridis_c(guide = guide_colourbar(title = expression(alpha))) +
   scale_shape_manual(values = c(16, 8),
                      guide = FALSE) +
   xlab(NULL) +
@@ -86,6 +88,17 @@ gp <- ggplot(pd_lims, aes(x = pos,
   xlim(c(0, NA)) +
   geom_point(data = pd_lims,
              colour = rep(NA, pd_lims[, .N]),
-             shape = 16) +
-  geom_point(data = bs_pd)
+             shape = 16,
+             size = 1) +
+  geom_point(data = bs_pd,
+             size = 1)
+
+wo <- grid::convertUnit(unit(483, "pt"), "mm", valueOnly = TRUE)
+ho <- grid::convertUnit(unit(483 * 1/3, "pt"), "mm", valueOnly = TRUE)
+ggsave("fig/figure_2.pdf",
+       gp,
+       width = wo,
+       height = ho,
+       unit = "mm",
+       device = cairo_pdf)
 

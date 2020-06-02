@@ -83,10 +83,18 @@ wo <- grid::convertUnit(unit(483 * (7/16), "pt"), "mm", valueOnly = TRUE)
 ho <- grid::convertUnit(unit(483 * (1/2), "pt"), "mm", valueOnly = TRUE)
 ggsave(
     "fig/location_map.pdf",
-    gp + xlab("Longitude") + ylab("Latitude"),
+    gp,
     width = wo,
     height = ho,
     unit = "mm",
     device = cairo_pdf)
+
+ggsave(filename = "fig/location_map.svg",
+       plot = gp,
+    width = wo,
+    height = ho,
+    unit = "mm",
+    device = svglite)
+
 
 saveRDS(gp, "fig/location_map.Rds")
