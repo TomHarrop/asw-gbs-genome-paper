@@ -8,7 +8,7 @@ The locations are also illustrated in Figure 1.
 The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
 [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 
-For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (as in Table 1) in August, 2017.
+For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (as in Table 1) in August 2017.
 These samples were dissected as per Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
 After dissection, heads were removed and used for genotyping.
 

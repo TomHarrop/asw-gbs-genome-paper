@@ -41,5 +41,5 @@ This allowed us to optimise the contiguity and completeness of the genome whilst
 
 ### Conclusion
 
-Our results show that New Zealand populations have a large amount of heterozygosity, and we suggest that this allowed them to evolve resistance to their biological control agent.
+Our results show that New Zealand populations of ASW have a large amount of heterozygosity, and we suggest that this allowed them to evolve resistance to their biological control agent.
 This highlights the need for monitoring biological control systems by genome-wide genotyping.

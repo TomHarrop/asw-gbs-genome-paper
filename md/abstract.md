@@ -8,7 +8,7 @@ Theoretical studies have shown that unequal genetic variation between the host a
 <!-- - approach and methods used -->
 
 To address this, we measured the genetic variation in New Zealand populations of the pasture pest, Argentine stem weevil (*Listronotus bonariensis*), which is controlled with declining effectiveness by a parasitoid wasp, *Microctonus hyperodae*.
-We constructed a draft reference genome, then collected samples from a geographical survey of 10 sites around New Zealand and genotyped them using a modified genotyping-by-sequencing approach.
+We constructed a draft reference genome, collected samples from a geographical survey of 10 sites around New Zealand, and genotyped them using a modified genotyping-by-sequencing approach.
 
 <!-- - main results (2-3 points) -->
 
