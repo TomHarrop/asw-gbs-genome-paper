@@ -4,7 +4,7 @@ The purpose of this work was to investigate genetic variation in New Zealand pop
 Previous reports using randomly amplified polymorphic DNA (RAPD) markers and *cytochrome C oxidase subunit I* (*COI*) sequencing suggested a high degree of genetic similarity and identified a single *COI* haplotype in New Zealand populations [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013].
 In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approach reveal a high level of genetic diversity within and between populations.
 We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, which we expect to be exacerbated by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
-This indicates that genetic variation in both host and target need to be monitored with high-resolution genotyping to maintain success of biological control.
+This indicates that genetic variation in both host and biocontrol agent need to be monitored with high-resolution genotyping to maintain success of biological control.
 
 ASW was thought to have arrived in New Zealand in the early 20^th^ century, probably via trade in pasture seeds or hay used for feed during stock transit [@brookingSilencesGrassRetrieving2007].
 The earlier reports of low genetic diversity, based on traditional molecular markers [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013],  suggested a limited incursion followed by dispersal and expansion.
@@ -34,10 +34,11 @@ These assemblies are 782 MB and 771 MB, respectively.
 Assemblies using long reads capture more of the genome, presumably because larger repeat regions can be assembled.
 Our ASW genome of 1.1 GB is larger than other available weevil genomes, and has a high proportion of repetitive sequences.
 The contiguity statistics and BUSCO scores indicate draft quality, and we expect gaps in the assembly at larger repeat regions that were not sufficiently covered by long reads.
-Our attempt at short-read assembly of the Argentine stem weevil genome was not effective because of the extreme repeat content, and the heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
+Our attempt at short-read assembly of the Argentine stem weevil genome was not effective because of the extreme repeat content.
+The heterozygosity in weevil populations and lack of an inbred, laboratory strain made pooling individuals for sequencing undesirable.
 This is highlighed by the number of multiple-copy genes in the combined, long read assembly.
 Our strategy to assemble the ASW genome included contig construction with the longest reads, followed by assembly polishing with long reads from a single individual, and then redundant contig removal with PCR-free short reads from another single individual.
-This allowed us to optimise the contiguity and completeness of the genome whilst managing the number of redundant contigs (Table 1).
+This allowed us to optimise the contiguity and completeness of the genome whilst managing the number of redundant contigs (Table 2 ).
 
 ### Conclusion
 

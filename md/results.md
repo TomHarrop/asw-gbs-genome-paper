@@ -8,16 +8,16 @@ We initially attempted assembly from a single individual using PCR-free, short r
 This resulted in a fragmented assembly with low BUSCO scores (Table 2).
 *k*-mer analysis on the raw short reads suggested 2.1 polymorphisms per 100 bp and a genomic repeat content of at least 28% in the individual we sequenced (**Supporting Information**).
 We then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
-We produced 29.8 GB of quality-filtered reads with an *N*~50~ length of 9.0 KB.
+We produced 29.8 Gb of quality-filtered reads with an *N*~50~ length of 9.0 kb.
 Assembling the single individual, long read genome resulted in improved contiguity and BUSCO scores compared to the short-read assembly (Table 2).
 Consistent with the raw short read data, the single individual, long read genome was at least 70% repetitive (Table 2).
 To improve assembly across long repeats, we produced a second ONT dataset with longer reads from HMW DNA from two pools of 20 individuals each, without amplification.
-Sequencing these samples on the MinION sequencer produced a total of 12.0 GB of quality-filtered reads with an *N*~50~ length of 19.5 KB.
+Sequencing these samples on the MinION sequencer produced a total of 12.0 Gb of quality-filtered reads with an *N*~50~ length of 19.5 kb.
 Assembling the longer reads generated from the pooled sample alone resulted in a more contiguous genome, but with lower BUSCO scores (Table 2).
 We constructed a combined, long-read genome using the pooled, long-read dataset for contig construction, and the single-individual, long-read dataset for assembly polishing.
 This improved the BUSCO scores, but produced a large number of redundant contigs (Table 2), presumably because of the high rate of heterozygosity in the pooled, long-read dataset.
 We then used the PCR-free, short read sequencing data from a single individual with the Purge Haplotigs pipeline to remove redundant contigs from the combined long read assembly [@roachPurgeHaplotigsAllelic2018].
-This resulted in a final draft assembly of 1.1 GB with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
+This resulted in a final draft assembly of 1.1 Gb with an *N*~50~ length of 122.3 kb and a BUSCO completeness of 83.9%.
 The final draft assembly had a repeat content of at least 70% (Table 2), with a maximum repeat size of 30.4 kb and a repeat *N*~50~ length of 494 bp.
 The non-repetitive regions had an *N*~50~ length of 1066 bp.
 
@@ -32,12 +32,15 @@ n.d.: not determined.
 
 | | Short read | Single individual, long read | Pooled, long read | Combined, long read | Final draft |
 |----------:|:-----|:-----|:-----|:-----|:-----|
-|               Assembly length (Gb) | 1.3        | 1.2                          | 1.2               | 1.7                 | 1.1         |
-|                            *N*~50~ | 53046      | 4523                         | 2958              | 5281                | 2681        |
-|                *N*~50~ length (kb) | 7.1        | 74.4                         | 112.6             | 86.4                | 122.3       |
-|   Complete, single-copy BUSCOs (%) | 32.7       | 72.2                         | 71.0              | 69.2                | 78.8        |
-| Complete, multiple-copy BUSCOs (%) | 17.2       | 7.5                          | 5.9               | 17.4                | 5.1         |
-|                 Minimum^1^ repeat content (%) | n.d. | 71.0 | 71.4 | 71.4 | 71.3 |
+|        Assembly length (Gb)        |    1.3     |             1.2              |        1.2        |         1.7         |     1.1     |
+|              *N*~50~               |   53046    |             4523             |       2958        |        5281         |    2681     |
+|        *N*~50~ length (kb)         |    7.1     |             74.4             |       112.6       |        86.4         |    122.3    |
+|              Gaps (%)              |    3.5     |              0               |         0         |          0          |      0      |
+|           GC content (%)           |    30.6    |             31.3             |       31.4        |        31.4         |    31.3     |
+|  Complete, single-copy BUSCOs (%)  |    32.7    |             72.2             |        71         |        69.2         |    78.8     |
+| Complete, multiple-copy BUSCOs (%) |    17.2    |             7.5              |        5.9        |        17.4         |     5.1     |
+|   Minimum^1^ repeat content (%)    |    n.d.    |              71              |       71.4        |        71.4         |    71.3     |
+
 
 ### Genetic variation is associated with geography in NZ populations of Argentine stem weevil 
 
