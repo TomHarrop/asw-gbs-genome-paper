@@ -3,14 +3,15 @@
 The purpose of this work was to investigate genetic variation in New Zealand populations of ASW and its possible relationship to resistance to *M. hyperodae*.
 Previous reports using randomly amplified polymorphic DNA (RAPD) markers and *cytochrome C oxidase subunit I* (*COI*) sequencing suggested a high degree of genetic similarity and identified a single *COI* haplotype in New Zealand populations [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013].
 In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approach reveal a high level of genetic diversity within and between populations.
-We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, which we expect to be exacerbated by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
+We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, *M. hyperodae*.
+We expect variation to be limited by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
 This indicates that genetic variation in both host and biocontrol agent need to be monitored with high-resolution genotyping to maintain success of biological control.
 
 ASW was thought to have arrived in New Zealand in the early 20^th^ century, probably via trade in pasture seeds or hay used for feed during stock transit [@brookingSilencesGrassRetrieving2007].
 The earlier reports of low genetic diversity, based on traditional molecular markers [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013],  suggested a limited incursion followed by dispersal and expansion.
 Our results provide three main pieces of evidence to update the proposed history of ASW incursion in New Zealand.
 The high heterozygosity across populations could be explained by a large initial incursion, repeated introductions, and/or an unusually high mutation rate.
-The genetic differentiation between populations from North and South of the Main Divide suggest that migration is low or absent between these regions.
+The genetic differentiation between populations from North and South of the Main Divide points to low or absent migration rates between these regions.
 Our demographic modelling suggests that the most likely scenario is separate introductions from the same source population to North and South of the Main Divide, accompanied by a moderate reduction in population size and subsequent expansion **!!! TBC !!!**.
 The power to resolve the possible evolutionary histories that led to the current population structure of New Zealand weevils was provided by the increased resolution of genome-wide genotyping.
 
@@ -21,13 +22,14 @@ Possible reasons for this include one or more of the following:
 *iii.* microscopic detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals; 
 or *iv.* resistance is encoded by multiple regions of small effect, which we were unable to detect in our study.
 In model organisms, adaptive evolution in response to selective agents acting within the survivability distribution of a population takes the form of polygenic responses on standing variation [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
-The highest reported parasitism rate of ASW by *M. hyperodae* is 90% [@barkerEarlyImpactEndoparasitoid2006], implying that selection by *M. hyperodae* is within the survivability distribution of ASW populations.
+The highest reported parasitism rate of ASW by *M. hyperodae* is 90% [@barkerEarlyImpactEndoparasitoid2006], implying that some individuals in a population survive predation.
+In other words, selection by *M. hyperodae* acts within the survivability distribution of ASW populations
 We detected a large amount of standing variation in our survey of ASW populations, which may encode phenotypic variation in parasitism survivability.
 For these reasons, we suggest that a polygenic response is the most probable scenario.
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
 
-Two draft weevil (family Curculionidae) genomes constructed from short reads have been deposited in the NCBI Genome database.
+Two draft weevil (Coleoptera: Curculionidae) genomes constructed from short reads have been deposited in the NCBI Genome database.
 The coffee berry borer, *Hypothenemus hampei*, has a draft genome size of 163 MB [@vegaDraftGenomeMost2015], and the mountain pine beetle, *Dendroctonus ponderosae*, has a draft genome size of 202 MB in males and 213 MB in females [@keelingDraftGenomeMountain2013].
 Draft genomes that incorporate long reads have been deposited for the red palm weevil (*Rhynchophorus ferrugineus*; [GCA_012979105.1](https://www.ncbi.nlm.nih.gov/assembly/GCA_012979105.1/)) and the rice weevil (*Sitophilus oryzae*; [GCF_002938485.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_002938485.1/)).
 These assemblies are 782 MB and 771 MB, respectively.

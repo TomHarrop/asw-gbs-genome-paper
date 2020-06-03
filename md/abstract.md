@@ -2,8 +2,9 @@
 
 <!-- context and need for the work -->
 Modified, agricultural landscapes are susceptible to damage by insect pests.
-Biological control of pests is typically successful once the control agent is established, but this depends on the agent's ability to adapt to evolution in the host.
-Theoretical studies have shown that unequal genetic variation between the host and the control agent will lead to rapid evolution of resistance in the host, but cases of this have not been documented in the field.
+Biological control of pests is typically successful once a control agent has established, but this depends on the agent's ability to adapt to evolution in the host.
+Theoretical studies have shown that unequal genetic variation between the host and the control agent will lead to rapid evolution of resistance in the host.
+Although this has been reported in one instance, the underlying genetics have not been studied.
 
 <!-- - approach and methods used -->
 

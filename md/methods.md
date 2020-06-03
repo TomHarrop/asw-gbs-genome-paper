@@ -4,7 +4,7 @@
 
 We collected regional ASW samples from commercially-farmed ryegrass (*Lolium perenne* L.) / white clover (*Trifolium repens* L.) pastures using a suction device to collect ground litter (Table 1).
 Weevils were extracted from the litter in the laboratory.
-The locations are illustrated in Figure 1.
+The locations sampled are illustrated in Figure 1.
 The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
 [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 

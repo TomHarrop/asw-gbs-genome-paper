@@ -11,7 +11,7 @@ John Skelly^1^,
 Siva Ganesh^2^,
 Rachael L. Ashby^3^,
 Jeanne M.E. Jacobs^4,5^,
-Stephen Goldson^4,5^,
+Stephen L. Goldson^4,5^,
 Peter K. Dearden^1^  
 
 ^1^ Genomics Aotearoa and Department of Biochemistry, University of Otago, Dunedin 9054, Aotearoa--New Zealand.  

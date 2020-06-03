@@ -70,7 +70,7 @@ This suggests that the Main Divide, which runs along the Southern Alps and divid
 Genetic diversity in NZ populations of Argentine stem weevil.
 **A** Weevil sampling locations.
 We collected Argentine stem weevils from 4 locations in the North Island and 6 locations in the South Island of New Zealand.
-Greymouth is in the South Island, but North of the Main Divide, which runs along the Southern Alps and divides the South Island.
+Greymouth is in the South Island, but North of the Main Divide, which runs along the Southern Alps and partitions the South Island.
 The number of weevils genotyped from each location is shown on the map.
 Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 **B** Mean observed heterozygosity for each population.
@@ -82,7 +82,8 @@ In the DAPC (**E**), the major linear discriminant (LD1) explains 96.7% of betwe
 LD1 splits individuals from North and South of the Main Divide.
 LD2 separates Lincoln individuals from other individuals.
 **F** Posterior probability of group assignment for each individual.
-All populations contain individuals with high posterior probabilities of membership to other populations, consistent with gene flow between populations.
+All populations contain individuals with high posterior probabilities of membership to other populations.
+This is consistent with gene flow between populations.
 We did not detect evidence of gene flow between populations from North and South of the Main Divide.
 Individuals sampled from Lincoln had the lowest posterior probabilities of membership to other populations.
 
@@ -93,7 +94,7 @@ Individuals sampled from Lincoln had the lowest posterior probabilities of membe
 ### Genetic variation is not associated with parasitism by *M. hyperodae*
 
 To detect large-effect variants associated with susceptibility to parasitism by *M. hyperodae*, we genotyped weevils that had also been tested for the presence of a parasitoid larva.
-We used a total of 200 individuals, collected from Lincoln and Ruakura (Table 3), because of declines in parasitism rate recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
+We used a total of 200 individuals, collected from Lincoln and Ruakura (Table 3), because of the extent of historical declines in parasitism rates recorded at these locations [@tomasettoIntensifiedAgricultureFavors2017].
 The weevils were examined for a parasitoid larva and genotyped at the same loci used for the geographical diversity survey.
 After filtering and pruning sites in linkage disequilibrium, we used 19,482 SNPs for PCA and DAPC in 95 parasitised inviduals and 84 individuals where a parasitoid was not detected (Table 3).
 We did not detect any genetic differentiation associated with the presence of a parasitoid, either within populations or between populations, or any evidence of skewed allele frequencies in these groups using BayeScan (lowest *Q*-value 0.97).
@@ -123,6 +124,8 @@ No common regions were identified by both methods.
 **Figure 2**.
 Distribution of SNPs that are associated with altered allele frequencies between populations from North and South of the Main Divide over 24 contigs.
 47 SNPs have altered allele frequencies, using the arbitrary *Q*-value cutoff of 0.01.
+α: BayeScan's locus-specific component of *F*~ST~ coefficient [@follGenomeScanMethodIdentify2008].
+Positive values suggest diversifying selection.
 ](fig/figure_2.pdf)
 
 : **Table 4**.
