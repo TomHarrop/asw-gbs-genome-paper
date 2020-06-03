@@ -6,7 +6,7 @@
 To construct a reference for genotyping populations of Argentine stem weevils, we produced a draft assembly of the ASW genome.
 We initially attempted assembly from a single individual using PCR-free, short read sequencing.
 This resulted in a fragmented assembly with low BUSCO scores (Table 2).
-*k*-mer analysis on the raw short reads suggested 2.1 polymorphisms per 100 bp and a genomic repeat content of at least 28% in the individual we sequenced (**Supporting Information**).
+*k*-mer analysis on the raw short reads suggested 2.1 polymorphisms per 100 bp and a genomic repeat content of 28--48% in the individual we sequenced (Supplementary Figure 1).
 We then attempted to produce a long-read genome assembly using whole-genome amplification (WGA) of high molecular weight (HMW) DNA from a single individual, followed by sequencing on the Oxford Nanopore Technologies (ONT) MinION sequencer.
 We produced 29.8 Gb of quality-filtered reads with an *N*~50~ length of 9.0 kb.
 Assembling the single individual, long read genome resulted in improved contiguity and BUSCO scores compared to the short-read assembly (Table 2).
@@ -72,7 +72,7 @@ Genetic diversity in NZ populations of Argentine stem weevil.
 We collected Argentine stem weevils from 4 locations in the North Island and 6 locations in the South Island of New Zealand.
 Greymouth is in the South Island, but North of the Main Divide, which runs along the Southern Alps and partitions the South Island.
 The number of weevils genotyped from each location is shown on the map.
-Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
+Map tiles by [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0), with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 **B** Mean observed heterozygosity for each population.
 **C** Pairwise *F*~ST~ values between populations.
 **D**  Principal components analysis (PCA) describing total variability and **E** discriminant analysis of principle components (DAPC) describing between-population variability of 116 individuals genotyped at 18,715 biallelic sites.
@@ -191,9 +191,9 @@ Number of SNPs under selection using BayeScan [@follGenomeScanMethodIdentify2008
 The genetic differentiation between weevils from North and South of the Main Divide suggests the possibility of either multiple routes of entry, or incursion via a single route of entry followed by isolation and diversification.
 The level of heterozygosity we measured across populations also suggests that incursions were large and/or repeated.
 To test these different possibilities, we simulated site frequency spectra (SFS) under 10 different models of demographic history and compared them to the observed SFS.
-Our models covered single and multiple introductions, with either moderate or strong reduction in effective population size during introduction, and multiple introductions from different source populations (Figure 3).
-**\@all --- our interim results suggest model *iii* (without migration) is the most likely.
-The modelling runs should finish just in time to sneak into the paper.**
+Our models covered single and multiple introductions, with either moderate or strong reduction in effective population size during introduction, and multiple introductions from different source populations (Figure 3A).
+The models that best matched the observed SFS had the North and South populations separated before bottlenecks, and support for these models was better when migration between populations was included.
+The model with the lowest mean delta likelihood supports separate routes of entry into New Zealand, with a bottleneck in each population prior to entry and migration between the North and South populations (Figure 3B).
 
 ![
 **Figure 3**.
@@ -206,7 +206,7 @@ Models *iii* and *iv* represent multiple routes of entry, with or without reduct
 Model *v* represents introduction to different sites from source populations that were isolated prior to introduction.
 All models were tested with and without migration between Northern and Southern populations.
 **B** Likelihood estimations from ten runs of each model.
-We used 1 million simulations and 60 optimisation cycles per run [@excoffierRobustDemographicInference2013].
-Runs that ended with a non-finite delta likehood after 1M simulations are shown with an asterisk.
+We used 1M simulations and 60 optimisation cycles per run [@excoffierRobustDemographicInference2013].
+Runs that ended with a non-finite delta likehood after 1M simulations are shown as an asterisk.
 The models that include a bottleneck after separation of the two populations had the lowest delta likelihoods, and model *iii* (with migration) had the lowest mean delta likelihood across runs.
 ](fig/figure_3.pdf)

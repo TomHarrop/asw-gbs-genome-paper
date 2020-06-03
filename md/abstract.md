@@ -14,7 +14,7 @@ We constructed a draft reference genome of the weevil, collected samples from a 
 <!-- - main results (2-3 points) -->
 
 New Zealand populations of Argentine stem weevil have high levels of heterozygosity and low population structure, consistent with a large effective population size and frequent gene flow.
-This implies that Argentine stem weevils were able to evolve more rapidly than its biocontrol agent, which reproduces asexually. 
+This implies that Argentine stem weevils were able to evolve more rapidly than their biocontrol agent, which reproduces asexually. 
 These findings show that monitoring genetic diversity in biocontrol agents and their targets is critical for long-term success of biological control.
 
 <!-- ### Synthesis and applications

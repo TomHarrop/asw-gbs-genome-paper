@@ -9,10 +9,11 @@ This indicates that genetic variation in both host and biocontrol agent need to 
 
 ASW was thought to have arrived in New Zealand in the early 20^th^ century, probably via trade in pasture seeds or hay used for feed during stock transit [@brookingSilencesGrassRetrieving2007].
 The earlier reports of low genetic diversity, based on traditional molecular markers [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013],  suggested a limited incursion followed by dispersal and expansion.
-Our results provide three main pieces of evidence to update the proposed history of ASW incursion in New Zealand.
+Our results provide three main pieces of evidence to update the proposed history of ASW incursions in New Zealand.
 The high heterozygosity across populations could be explained by a large initial incursion, repeated introductions, and/or an unusually high mutation rate.
-The genetic differentiation between populations from North and South of the Main Divide points to low or absent migration rates between these regions.
-Our demographic modelling suggests that the most likely scenario is separate introductions from the same source population to North and South of the Main Divide, accompanied by a moderate reduction in population size and subsequent expansion **!!! TBC !!!**.
+The genetic differentiation between populations from North and South of the Main Divide points to low migration rates between these regions.
+Our demographic modelling suggests that the populations expanded to their current effective sizes after already being separated into North and South populations.
+The most likely scenario is separate introductions from the same source population to North and South of the Main Divide, with some migration between the two populations.
 The power to resolve the possible evolutionary histories that led to the current population structure of New Zealand weevils was provided by the increased resolution of genome-wide genotyping.
 
 Despite the increased resolution of GBS compared to traditional markers, we did not detect regions of the genome associated with parasitism by *M. hyperodae*.
@@ -23,9 +24,8 @@ Possible reasons for this include one or more of the following:
 or *iv.* resistance is encoded by multiple regions of small effect, which we were unable to detect in our study.
 In model organisms, adaptive evolution in response to selective agents acting within the survivability distribution of a population takes the form of polygenic responses on standing variation [@mckenzieGeneticMolecularPhenotypic1994; @greenCisTransactingVariants2019].
 The highest reported parasitism rate of ASW by *M. hyperodae* is 90% [@barkerEarlyImpactEndoparasitoid2006], implying that some individuals in a population survive predation.
-In other words, selection by *M. hyperodae* acts within the survivability distribution of ASW populations
-We detected a large amount of standing variation in our survey of ASW populations, which may encode phenotypic variation in parasitism survivability.
-For these reasons, we suggest that a polygenic response is the most probable scenario.
+In other words, selection by *M. hyperodae* acts within the survivability distribution of ASW populations.
+Because we detected a large amount of standing variation in our survey of ASW populations, which may encode phenotypic variation in parasitism survivability, we suggest that a polygenic response is the most probable scenario.
 The number of markers yielded by legacy genotyping-by-sequencing approaches provides low power to detect polygenic responses resulting from weak selection on standing variation.
 Higher-resolution, genome-wide association studies using whole-genome resequencing with more individuals and a stronger resistance phenotype may allow detection of regions of the genome associated with resistance of the weevils to biocontrol.
 

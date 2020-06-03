@@ -5,8 +5,8 @@
 We collected regional ASW samples from commercially-farmed ryegrass (*Lolium perenne* L.) / white clover (*Trifolium repens* L.) pastures using a suction device to collect ground litter (Table 1).
 Weevils were extracted from the litter in the laboratory.
 The locations sampled are illustrated in Figure 1.
-The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013] using map tiles by
-[Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0) with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
+The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013], using map tiles by
+[Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0), with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 
 For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (as in Table 1) in August 2017.
 These samples were dissected as per Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
@@ -59,7 +59,7 @@ Reproducible code for annotating the draft ASW genome is hosted at [github.com/T
 
 ### Reduced-representation genome sequencing, processing and analysis
 
-DNA extraction and double digest RADseq [genotyping-by-sequencing, GBS; [@petersonDoubleDigestRADseq2012] were performed by AgResearch, Invermay, New Zealand.
+DNA extraction and double digest RADseq (genotyping-by-sequencing, GBS; [@petersonDoubleDigestRADseq2012]) were performed by AgResearch, Invermay, New Zealand.
 DNA was extracted from individual weevil heads using the ZR-96 Tissue & Insect DNA Kit (Zymo Research, CA, U.S.A.).
 The DNA was digested with *Ape*KI and *Msp*I and size selected on a BluePippin (Sage Science, MA, U.S.A.) with a window size of 150--500 bp.
 Individual libraries were barcoded and sequencing adaptors were added based on the Elshire method [@elshireRobustSimpleGenotypingbySequencing2011] with modifications [@doddsConstructionRelatednessMatrices2015], and 100 b single-end reads were generated from pooled libraries an Illumina HiSeq 2500 instrument.
@@ -72,7 +72,7 @@ All remaining reads were truncated to 80 b to account for unmatched adaptor sequ
 To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
 We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksAnalysisTool2013].
 
-For analysis, we used bcftools to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
+For analysis, we used bcftools 1.10 to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
 After filtering loci, we also removed individuals that had missing genotypes at more than 20% of loci.
 We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
 We used PLINK 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015], using the first four principal components.
