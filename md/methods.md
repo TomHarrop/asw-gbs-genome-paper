@@ -54,7 +54,7 @@ We identified less than 1 M HSPs in the subset assemblies, indicating that the r
 
 Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
-We annotated the final, draft assembly with funannotate 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020], using five RNA sequencing libraries generated from abdomens and heads of unparasitised adult ASW collected from Lincoln and Ruakura.
+We annotated the final, draft assembly with funannotate 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020], using five RNA sequencing libraries generated from abdomens and heads of unparasitised adult ASW collected from Ruakura.
 Reproducible code for annotating the draft ASW genome is hosted at [github.com/TomHarrop/asw-annotate](https://github.com/TomHarrop/asw-annotate).
 
 ### Reduced-representation genome sequencing, processing and analysis

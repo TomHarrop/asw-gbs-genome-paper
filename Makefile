@@ -1,5 +1,6 @@
 all: ms_word pdf
 
+cover_letter: cover_letter.docx
 ms_word: manuscript.docx
 pdf: manuscript.pdf
 
@@ -40,3 +41,13 @@ manuscript.pdf: md/front_matter.md md/abstract.md md/introduction.md md/methods.
 		md/end_matter.md \
 		md/ref_loc.md \
 		md/si.md
+
+
+cover_letter.docx: md/cover_letter.md
+	pandoc \
+		--from=markdown \
+		--to=docx \
+		--reference-doc=ref/ref.docx \
+		-o cover_letter.docx \
+		md/cover_letter.md
+		
