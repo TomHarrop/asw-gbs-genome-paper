@@ -3016,14 +3016,16 @@ references:
       given: Gary
     - family: Addison
       given: P.J.
+  collection-title: >-
+    Proceedings of the 6th Australasian Conference on Grassland Invertebrate
+    Ecology
+  container-title: 6th Australasian Conference on Grassland Invertebrate Ecology
   event: >-
     Proceedings of the 6th Australasian Conference on Grassland Invertebrate
     Ecology
   issued:
     - year: 1993
       month: 1
-      day: 1
-  source: ResearchGate
   title: >-
     Argentine stem weevil populations and damage in ryegrass swards of
     contrasting Acremonium infection
@@ -47601,6 +47603,8 @@ references:
       given: Gary
     - family: Pottinger
       given: R
+  collection-title: Proceedings of the 44th New Zealand Weed and Pest Control Conference
+  container-title: 44th New Zealand Weed and Pest Control Conference
   event: Proceedings of the 44th New Zealand Weed and Pest Control Conference
   issued:
     - year: 1991

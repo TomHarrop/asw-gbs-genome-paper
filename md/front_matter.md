@@ -2,7 +2,7 @@
 
 Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
-Ruy Juaregui^2^,
+Ruy Jauregui^2^,
 Shannon E. Taylor^1^,
 Sarah N. Inwood^1^,
 Tracey van Stijn^3^,

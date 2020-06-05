@@ -61,8 +61,9 @@ Reproducible code for annotating the draft ASW genome is hosted at [github.com/T
 
 DNA extraction and double digest RADseq (genotyping-by-sequencing, GBS; [@petersonDoubleDigestRADseq2012]) were performed by AgResearch, Invermay, New Zealand.
 DNA was extracted from individual weevil heads using the ZR-96 Tissue & Insect DNA Kit (Zymo Research, CA, U.S.A.).
-The DNA was digested with *Ape*KI and *Msp*I and size selected on a BluePippin (Sage Science, MA, U.S.A.) with a window size of 150--500 bp.
-Individual libraries were barcoded and sequencing adaptors were added based on the Elshire method [@elshireRobustSimpleGenotypingbySequencing2011] with modifications [@doddsConstructionRelatednessMatrices2015], and 100 b single-end reads were generated from pooled libraries an Illumina HiSeq 2500 instrument.
+The DNA was digested with *Ape*KI and *Msp*I and barcoded based on the Elshire method [@elshireRobustSimpleGenotypingbySequencing2011] with modifications [@doddsConstructionRelatednessMatrices2015].
+Pooled libraries were size selected on a BluePippin (Sage Science, MA, U.S.A.) with a window size of 150--500 bp.
+100 nt single-end reads were generated from libraries an Illumina HiSeq 2500 instrument.
 
 We used a strict processing pipeline to prepare the raw GBS reads for locus assembly.
 Samples were demultiplexed with zero allowed barcode mismatches to 91--93 b reads, depending on barcode length.
