@@ -15,18 +15,18 @@ After dissection, heads were removed and used for genotyping.
 : **Table 1**. 
 Weevil collection locations (see also Figure 1).  
 
-| Location      | GPS co-ordinates (lat, lon)           | Date collected | 
-|----------:|-----|-----|
-| Coromandel    | -37.20194, 175.59417 | June 2015 |
-| Ruakura       | -37.76750, 175.32361 | June 2015 |
-| Taranaki      | -39.61500, 174.30278 | July 2015 |
-| Wellington    | -41.13647, 175.35163 | July 2015 |
-| Greymouth     | -42.89506, 172.71926 | September 2016 |
-| Lincoln       | -43.64397, 172.44292 | July 2014 |
-| Ophir         | -45.10955, 169.58753 |  August 2017 |
-| Mararoa Downs | -45.50672, 167.97596 | May 2016 |
-| Mossburn      | -45.66966, 168.23884 | January 2016 |
-| Fortrose      | -46.57064, 168.79993 | November 2016       |
+| Location      | GPS co-ordinates (lat, lon)           | Date collected | Number genotyped |
+|----------:|-----|-----|-----|
+| Coromandel    | -37.20194, 175.59417 | June 2015 | 16 |
+| Ruakura       | -37.76750, 175.32361 | June 2015 | 16 |
+| Taranaki      | -39.61500, 174.30278 | July 2015 | 15 |
+| Wellington    | -41.13647, 175.35163 | July 2015 | 16 |
+| Greymouth     | -42.89506, 172.71926 | September 2016 | 16 |
+| Lincoln       | -43.64397, 172.44292 | July 2014 | 15 |
+| Ophir         | -45.10955, 169.58753 |  August 2017 | 15 |
+| Mararoa Downs | -45.50672, 167.97596 | May 2016 | 16 |
+| Mossburn      | -45.66966, 168.23884 | January 2016 | 16 |
+| Fortrose      | -46.57064, 168.79993 | November 2016 | 16 |
 
 ### Genome assembly
 
@@ -50,7 +50,7 @@ Redundant contigs were removed from the combined, long read assembly with Purge 
 
 We were not able to estimate repeat content in the full genomes, because RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] identified >500M High-scoring Segment Pairs (HSPs) and did not finish after running for 6 weeks with ~200 GB of physical RAM (results not shown).
 We estimated repeat content by subsetting the assemblies using the leave-one-out alignment method implemented in Funannotate clean 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020].
-We then used RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the subset assemblies.
+We then used RepeatModeler 2.0.1 and RepeatClassifier 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the subset assemblies.
 We identified less than 1 M HSPs in the subset assemblies, indicating that the repeat content of the subset assemblies is an underestimate of the repeat content in the full assemblies.
 
 Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
@@ -72,15 +72,15 @@ Reads were trimmed by searching for adaptors with a minimum match of 11 b.
 Reads shorter than 80 b after trimming were discarded.
 All remaining reads were truncated to 80 b to account for unmatched adaptor sequence < 11 b that may have been present at the end of reads.
 To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
-We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksAnalysisTool2013].
+We assembled loci against our draft genome using gstacks 2.53 [@catchenStacksAnalysisTool2013].
 
 For analysis, we used BCFtools 1.10 to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
 After filtering loci, we also removed individuals that had missing genotypes at more than 20% of loci.
-We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
+We ran the Stacks 2.53 populations module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
 We used PLINK 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015], using the first four principal components.
 We used PGDSpider 2.1.1.5 [@lischerPGDSpiderAutomatedData2012] to convert the un-pruned dataset for detection of loci under selection with BayeScan 2.1 [@follGenomeScanMethodIdentify2008].
 We analysed cross-population extended haplotype homozygosity with the R package rehh 3.1.0 [@gautierRehhReimplementationPackage2017].
-For demographic analysis, we converted the pruned dataset to minor allele (folded) site frequency spectra using easysfs commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS).
+For demographic analysis, we converted the pruned dataset to minor allele (folded) site frequency spectra using easySFS commit c2b26c5 from [github.com/isaacovercast/easySFS](https://github.com/isaacovercast/easySFS).
 We estimated likelihood for each demographic model ten times using 
 fastsimcoal2 2.6 [@excoffierRobustDemographicInference2013] with 1 million simulations and 60 optimisation cycles per run.
 We compared model runs using delta likelihood (maximum observed likelihood - maximum estimated likelihood) and Akaike information criteria [@akaikeNewLookStatistical1974].

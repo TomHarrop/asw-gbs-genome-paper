@@ -26679,6 +26679,50 @@ references:
     http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=7278524
   volume: '103'
 
+- id: hubleyDfamDatabaseRepetitive2016
+  abstract: >-
+    Abstract.  Repetitive DNA, especially that due to transposable elements
+    (TEs), makes up a large fraction of many genomes. Dfam is an open access
+    database of fam
+  accessed:
+    - year: 2020
+      month: 6
+      day: 18
+  author:
+    - family: Hubley
+      given: Robert
+    - family: Finn
+      given: Robert D.
+    - family: Clements
+      given: Jody
+    - family: Eddy
+      given: Sean R.
+    - family: Jones
+      given: Thomas A.
+    - family: Bao
+      given: Weidong
+    - family: Smit
+      given: Arian F. A.
+    - family: Wheeler
+      given: Travis J.
+  container-title: Nucleic Acids Research
+  container-title-short: Nucleic Acids Res
+  DOI: 10.1093/nar/gkv1272
+  ISSN: 0305-1048
+  issue: D1
+  issued:
+    - year: 2016
+      month: 1
+      day: 4
+  language: en
+  page: D81-D89
+  publisher: Oxford Academic
+  source: academic.oup.com
+  title: The Dfam database of repetitive DNA families
+  type: article-journal
+  URL: 'https://academic.oup.com/nar/article/44/D1/D81/2503084'
+  volume: '44'
+
 - id: huetDeletiongeneratorCompoundElement2002
   abstract: >-
     With the available eukaryotic genome sequences, there are predictions of
