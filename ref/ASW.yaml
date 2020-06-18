@@ -1461,6 +1461,51 @@ references:
   URL: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0003626'
   volume: '3'
 
+- id: amarasingheOpportunitiesChallengesLongread2020
+  abstract: >-
+    Long-read technologies are overcoming early limitations in accuracy and
+    throughput, broadening their application domains in genomics. Dedicated
+    analysis tools that take into account the characteristics of long-read data
+    are thus required, but the fast pace of development of such tools can be
+    overwhelming. To assist in the design and analysis of long-read sequencing
+    projects, we review the current landscape of available tools and present an
+    online interactive database, long-read-tools.org, to facilitate their
+    browsing. We further focus on the principles of error correction, base
+    modification detection, and long-read transcriptomics analysis and highlight
+    the challenges that remain.
+  accessed:
+    - year: 2020
+      month: 6
+      day: 8
+  author:
+    - family: Amarasinghe
+      given: Shanika L.
+    - family: Su
+      given: Shian
+    - family: Dong
+      given: Xueyi
+    - family: Zappia
+      given: Luke
+    - family: Ritchie
+      given: Matthew E.
+    - family: Gouil
+      given: Quentin
+  container-title: Genome Biology
+  container-title-short: Genome Biology
+  DOI: 10.1186/s13059-020-1935-5
+  ISSN: 1474-760X
+  issue: '1'
+  issued:
+    - year: 2020
+      month: 2
+      day: 7
+  page: '30'
+  source: BioMed Central
+  title: Opportunities and challenges in long-read sequencing data analysis
+  type: article-journal
+  URL: 'https://doi.org/10.1186/s13059-020-1935-5'
+  volume: '21'
+
 - id: amarnathReconstitutionTorsoSignaling2017
   abstract: >-
     Skip to Next Section
@@ -16035,6 +16080,76 @@ references:
   URL: >-
     https://www.nature.com/nature/journal/v550/n7675/full/550285a.html?foxtrotcallback=true
   volume: '550'
+
+- id: eizengaPangenomeGraphs2020
+  abstract: >-
+    Low-cost whole-genome assembly has enabled the collection of
+    haplotype-resolved pangenomes for numerous organisms. In turn, this
+    technological change is encouraging the development of methods that can
+    precisely address the sequence and variation described in large collections
+    of related genomes. These approaches often use graphical models of the
+    pangenome to support algorithms for sequence alignment, visualization,
+    functional genomics, and association studies. The additional information
+    provided to these methods by the pangenome allows them to achieve superior
+    performance on a variety of bioinformatic tasks, including read alignment,
+    variant calling, and genotyping. Pangenome graphs stand to become a
+    ubiquitous tool in genomics. Although it is unclear whether they will
+    replace linear reference genomes, their ability to harmoniously relate
+    multiple sequence and coordinate systems will make them useful irrespective
+    of which pangenomic models become most common in the future. Expected final
+    online publication date for the Annual Review of Genomics and Human
+    Genetics, Volume 21 is August 31, 2020. Please see 
+    http://www.annualreviews.org/page/journal/pubdates for revised estimates.
+  accessed:
+    - year: 2020
+      month: 6
+      day: 8
+  author:
+    - family: Eizenga
+      given: Jordan M.
+    - family: Novak
+      given: Adam M.
+    - family: Sibbesen
+      given: Jonas A.
+    - family: Heumos
+      given: Simon
+    - family: Ghaffaari
+      given: Ali
+    - family: Hickey
+      given: Glenn
+    - family: Chang
+      given: Xian
+    - family: Seaman
+      given: Josiah D.
+    - family: Rounthwaite
+      given: Robin
+    - family: Ebler
+      given: Jana
+    - family: Rautiainen
+      given: Mikko
+    - family: Garg
+      given: Shilpa
+    - family: Paten
+      given: Benedict
+    - family: Marschall
+      given: Tobias
+    - family: Sirén
+      given: Jouni
+    - family: Garrison
+      given: Erik
+  container-title: Annual Review of Genomics and Human Genetics
+  container-title-short: Annu. Rev. Genom. Hum. Genet.
+  DOI: 10.1146/annurev-genom-120219-080406
+  ISSN: 1527-8204
+  issued:
+    - year: 2020
+      month: 5
+      day: 26
+  publisher: Annual Reviews
+  source: annualreviews.org (Atypon)
+  title: Pangenome Graphs
+  type: article-journal
+  URL: 'https://www.annualreviews.org/doi/10.1146/annurev-genom-120219-080406'
 
 - id: elshireRobustSimpleGenotypingbySequencing2011
   abstract: >-
@@ -48195,6 +48310,95 @@ references:
   type: report
   URL: >-
     http://www.acfonline.org.au/sites/default/files/resources/Climate_change_and_food_prices_in_Australia.pdf
+
+- id: rakocevicFastAccurateGenomic2019
+  abstract: >-
+    The human reference genome serves as the foundation for genomics by
+    providing a scaffold for alignment of sequencing reads, but currently only
+    reflects a single consensus haplotype, thus impairing analysis accuracy.
+    Here we present a graph reference genome implementation that enables read
+    alignment across 2,800 diploid genomes encompassing 12.6 million SNPs and
+    4.0 million insertions and deletions (indels). The pipeline processes one
+    whole-genome sequencing sample in 6.5 h using a system with 36 CPU cores. We
+    show that using a graph genome reference improves read mapping sensitivity
+    and produces a 0.5% increase in variant calling recall, with unaffected
+    specificity. Structural variations incorporated into a graph genome can be
+    genotyped accurately under a unified framework. Finally, we show that
+    iterative augmentation of graph genomes yields incremental gains in variant
+    calling accuracy. Our implementation is an important advance toward
+    fulfilling the promise of graph genomes to radically enhance the scalability
+    and accuracy of genomic analyses.
+  accessed:
+    - year: 2020
+      month: 6
+      day: 8
+  author:
+    - family: Rakocevic
+      given: Goran
+    - family: Semenyuk
+      given: Vladimir
+    - family: Lee
+      given: Wan-Ping
+    - family: Spencer
+      given: James
+    - family: Browning
+      given: John
+    - family: Johnson
+      given: Ivan J.
+    - family: Arsenijevic
+      given: Vladan
+    - family: Nadj
+      given: Jelena
+    - family: Ghose
+      given: Kaushik
+    - family: Suciu
+      given: Maria C.
+    - family: Ji
+      given: Sun-Gou
+    - family: Demir
+      given: Gülfem
+    - family: Li
+      given: Lizao
+    - family: Toptaş
+      given: Berke Ç
+    - family: Dolgoborodov
+      given: Alexey
+    - family: Pollex
+      given: Björn
+    - family: Spulber
+      given: Iosif
+    - family: Glotova
+      given: Irina
+    - family: Kómár
+      given: Péter
+    - family: Stachyra
+      given: Andrew L.
+    - family: Li
+      given: Yilong
+    - family: Popovic
+      given: Milos
+    - family: Källberg
+      given: Morten
+    - family: Jain
+      given: Amit
+    - family: Kural
+      given: Deniz
+  container-title: Nature Genetics
+  DOI: 10.1038/s41588-018-0316-4
+  ISSN: 1546-1718
+  issue: '2'
+  issued:
+    - year: 2019
+      month: 2
+  language: en
+  number: '2'
+  page: 354-362
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: Fast and accurate genomic analyses using genome graphs
+  type: article-journal
+  URL: 'https://www.nature.com/articles/s41588-018-0316-4'
+  volume: '51'
 
 - id: rambautFigTree2007
   author:

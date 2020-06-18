@@ -6,6 +6,7 @@ In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approac
 We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, *M. hyperodae*.
 We expect variation to be limited by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
 This indicates that genetic variation in both host and biocontrol agent need to be monitored with high-resolution genotyping to maintain success of biological control.
+More work will be required to find the genetic mechanism of resistance and describe its prevalence and spread in weevil populations, and to measure the amount of variation and population structure in *M. hyperodae*.
 
 ASW was thought to have arrived in New Zealand in the early 20^th^ century, probably via trade in pasture seeds or hay used for feed during stock transit [@brookingSilencesGrassRetrieving2007].
 The earlier reports of low genetic diversity, based on traditional molecular markers [@williamsGeographicalOriginIntroduced1994; @vinkPCRGutAnalysis2013],  suggested a limited incursion followed by dispersal and expansion.

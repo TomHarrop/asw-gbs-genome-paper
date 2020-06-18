@@ -2,14 +2,14 @@
 
 ### Weevil sampling
 
-We collected regional ASW samples from commercially-farmed ryegrass (*Lolium perenne* L.) / white clover (*Trifolium repens* L.) pastures using a suction device to collect ground litter (Table 1).
+We collected ASW samples from commercially-farmed ryegrass (*Lolium perenne* L.) / white clover (*Trifolium repens* L.) pastures, at 10 sites across New Zealand, using a suction device to collect ground litter (Table 1).
 Weevils were extracted from the litter in the laboratory.
 The locations sampled are illustrated in Figure 1.
 The map was plotted with the ggmap package for ggplot2 [@kahleGgmapSpatialVisualization2013], using map tiles by
 [Stamen Design](http://stamen.com) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0), with data by [OpenStreetMap](http://openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright).
 
 For the comparison between parasitised and unparasitised weevils, samples were collected from ryegrass/clover pasture at Ruakura and Lincoln (as in Table 1) in August 2017.
-These samples were dissected as per Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
+These samples were dissected as described by Goldson and Emberson [@goldsonReproductiveMorphologyArgentine1981a] to determine whether they were parasitised.
 After dissection, heads were removed and used for genotyping.
 
 : **Table 1**. 
@@ -33,28 +33,29 @@ Weevil collection locations (see also Figure 1).
 To produce the short read dataset, an Illumina TruSeq PCR-free 350bp insert library was generated from DNA extracted from a single, male Argentine stem weevil collected from endophyte-free hybrid ryegrass (*L. perenne* × *Lolium multiflorum*) at Lincoln, New Zealand.
 Library preparation and sequencing were performed by Macrogen Inc. (Seoul, Republic of Korea).
 A total of 158 Gb of 100 b and 150 b paired-end reads were generated from the TruSeq PCR-free library.
-After removing common sequencing contaminants and trimming adaptor sequences using BBTools [@bushnellBBMapFastAccurate2014], the short-read-only genome was assembled with meraculous 2.2.6 [@chapmanMeraculousNovoGenome2011; @chapmanMeraculous2FastAccurate2016; @goltsmanMeraculous2DHaplotypesensitiveAssembly2017].
+After removing common sequencing contaminants and trimming adaptor sequences using BBTools [@bushnellBBMapFastAccurate2014], the short-read-only genome was assembled with Meraculous 2.2.6 [@chapmanMeraculousNovoGenome2011; @chapmanMeraculous2FastAccurate2016; @goltsmanMeraculous2DHaplotypesensitiveAssembly2017].
 Reproducible code for assembling the short-read dataset and assessing the assemblies is hosted at [github.com/tomharrop/asw-nopcr](https://github.com/tomharrop/asw-nopcr).
 
-To produce long reads from a single individual, we produced high molecular weight DNA from a single, male ASW collected from Ruakura, New Zealand, using a modified  QIAGEN Genomic-tip 20/G extraction protocol [@harropHMWDNAExtraction2018].
+To produce long reads from a single individual, we produced high molecular weight DNA from a single, male ASW collected from Ruakura, New Zealand, using a modified QIAGEN Genomic-tip 20/G extraction protocol [@harropHMWDNAExtraction2018].
 We amplified the DNA using Φ29 multiple displacement amplification (QIAGEN REPLI-g Midi Kit) and debranched the amplified DNA using T7 Endonuclease I (New England Biolabs) according to the Oxford Nanopore Technologies Premium whole genome amplification protocol version WGA_kit9_v1.
 Debranching reduced the raw read *N*~50~ length to 9.0 kb.
 Amplified DNA was sequenced on 6 R9.4.1 flowcells using a MinION Mk1B sequencer (Oxford Nanopore Technologies).
 We also extracted high molecular weight DNA from three pools, each of 20 unsexed individuals collected from Ruakura, New Zealand.
 We sequenced this pooled DNA on 5 R9.4.1 flowcells, following the Genomic DNA by Ligation protocol (SQK-LSK109; Oxford Nanopore Technologies).
+We basecalled raw Nanopore data with Guppy 3.4.1 (Oxford Nanopore Technologies).
 We removed adaptor sequences from the long reads with Porechop 0.2.4 ([github.com/rrwick/Porechop](https://github.com/rrwick/Porechop)) and assembled with Flye 2.6 [@kolmogorovAssemblyLongErrorprone2019].
 
 All genome assemblies were assessed by size and contiguity statistics and BUSCO analysis [@simaoBUSCOAssessingGenome2015]. 
 Redundant contigs were removed from the combined, long read assembly with Purge Haplotigs 0b9afdf [@roachPurgeHaplotigsAllelic2018] using a low, mid and high cutoff of 60, 120 and 190, respectively.
 
 We were not able to estimate repeat content in the full genomes, because RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] identified >500M High-scoring Segment Pairs (HSPs) and did not finish after running for 6 weeks with ~200 GB of physical RAM (results not shown).
-We estimated repeat content by subsetting the assemblies using the leave-one-out alignment method implemented in funannotate clean 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020].
+We estimated repeat content by subsetting the assemblies using the leave-one-out alignment method implemented in Funannotate clean 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020].
 We then used RepeatModeler 2.0.1 [@smitRepeatModelerOpen12015] and RepeatMasker 4.1.0 [@smitRepeatMaskerOpen42015] from the Dfam TE Tools Container v1.1 ([github.com/Dfam-consortium/TETools](https://github.com/Dfam-consortium/TETools)) to estimate the repeat content of the subset assemblies.
 We identified less than 1 M HSPs in the subset assemblies, indicating that the repeat content of the subset assemblies is an underestimate of the repeat content in the full assemblies.
 
 Reproducible code for assembling and assessing the long-read ASW genomes is hosted at [github.com/TomHarrop/asw-flye-withpool](https://github.com/TomHarrop/asw-flye-withpool).
 
-We annotated the final, draft assembly with funannotate 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020], using five RNA sequencing libraries generated from abdomens and heads of unparasitised adult ASW collected from Ruakura.
+We annotated the final, draft assembly with Funannotate 1.7.4 [@jonloveNextgenusfsFunannotateFunannotate2020], using five RNA sequencing libraries generated from abdomens and heads of unparasitised adult ASW collected from Ruakura.
 Reproducible code for annotating the draft ASW genome is hosted at [github.com/TomHarrop/asw-annotate](https://github.com/TomHarrop/asw-annotate).
 
 ### Reduced-representation genome sequencing, processing and analysis
@@ -73,7 +74,7 @@ All remaining reads were truncated to 80 b to account for unmatched adaptor sequ
 To remove overamplified samples, we calculated the GC content for each library and discarded samples with median read GC > 45%.
 We assembled loci against our draft genome using `gstacks` 2.53 [@catchenStacksAnalysisTool2013].
 
-For analysis, we used bcftools 1.10 to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
+For analysis, we used BCFtools 1.10 to remove sites with more than 2 alleles, minor allele frequency < 0.05, or missing genotypes in more than 20% of individuals.
 After filtering loci, we also removed individuals that had missing genotypes at more than 20% of loci.
 We ran the Stacks 2.53 `populations` module [@catchenStacksAnalysisTool2013] to calculate inbreeding (*F*) and heterozygosity statistics.
 We used PLINK 1.9 [@changSecondgenerationPLINKRising2015] to prune sites in linkage disequilibrium for principal components analysis and discriminant analysis of principal components with the adegenet 2.1.2 package for R [@jombartDiscriminantAnalysisPrincipal2010; @rcoreteamLanguageEnvironmentStatistical2015], using the first four principal components.
@@ -89,6 +90,6 @@ All the code we used to process the raw reads, assemble loci and run downstream 
 ### Reproducibility and data availability
 
 Raw sequence data for the ASW genome assembly and annotation and raw GBS reads are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession **TBA**.
-We used `snakemake` [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and `Singularity` [@kurtzerSingularityScientificContainers2017] to  capture the computing environment.
-Using the code repositories listed in each methods section, the final results can be reproduced from the raw data with a single command using `snakemake` and `Singularity`.
+We used Snakemake [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and Singularity [@kurtzerSingularityScientificContainers2017] to  capture the computing environment.
+Using the code repositories listed in each methods section, the final results can be reproduced from the raw data with a single command using Snakemake and Singularity.
 The source for this manuscript is hosted at [github.com/TomHarrop/asw-gbs-genome-paper](https://github.com/TomHarrop/asw-gbs-genome-paper).

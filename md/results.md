@@ -112,6 +112,7 @@ We did not detect any genetic differentiation associated with the presence of a 
 
 Although we did not detect variation associated with presence of a parasitoid, parasitism rates vary across sites in NZ [@tomasettoIntensifiedAgricultureFavors2017].
 To investigate the genetic differentiation between regions, we grouped individuals that were collected from North and South of the Main Divide (Figure 1).
+Regional genetic differences could be related to selection acting on different loci North and South of the Main Divide and/or genetic drift acting on isolated populations.
 The two groups had a mean *F*~ST~ of 0.013.
 We detected 47 SNPs with skewed allele frequencies across 24 contigs in the draft genome with BayeScan (Figure 2).
 The contigs containing these SNPs had a total of 3--36 SNPs, and all 47 of the detected SNPs had positive α values, suggesting diversifying selection (Table 4).
@@ -192,7 +193,7 @@ The genetic differentiation between weevils from North and South of the Main Div
 The level of heterozygosity we measured across populations also suggests that incursions were large and/or repeated.
 To test these different possibilities, we simulated site frequency spectra (SFS) under 10 different models of demographic history and compared them to the observed SFS.
 Our models covered single and multiple introductions, with either moderate or strong reduction in effective population size during introduction, and multiple introductions from different source populations (Figure 3A).
-The models that best matched the observed SFS had the North and South populations separated before bottlenecks, and support for these models was better when migration between populations was included.
+The models that best matched the observed SFS had the North and South populations separated before bottlenecks (Figure 3A, models *ii*, *iii* and *v*), and support for these models was better when migration between populations was included.
 The model with the lowest mean delta likelihood supports separate routes of entry into New Zealand, with a bottleneck in each population prior to entry and migration between the North and South populations (Figure 3B).
 
 ![

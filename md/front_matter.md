@@ -1,4 +1,4 @@
-# Genetic diversity in invasive populations of Argentine stem weevil allows adaptation to biocontrol
+# Genetic diversity in invasive populations of Argentine stem weevil associated with adaptation to biocontrol
 
 Thomas W.R. Harrop^1^,
 Marissa F. Le Lec^1^,
