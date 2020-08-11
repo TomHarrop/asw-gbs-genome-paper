@@ -3208,7 +3208,7 @@ references:
   URL: 'https://academic.oup.com/jee/article/99/2/273/2218336'
   volume: '99'
 
-- id: barlowAlienInvertebratesNew2002a
+- id: barlowAlienInvertebratesNew2002
   author:
     - family: Barlow
       given: Nigel
@@ -7449,7 +7449,7 @@ references:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=23643535&retmode=ref&cmd=prlinks
   volume: '3'
 
-- id: buenrostroTranspositionNativeChromatin2013a
+- id: buenrostroTranspositionNativeChromatin2013
   abstract: >-
     We describe an assay for transposase-accessible chromatin using sequencing
     (ATAC-seq), based on direct in vitro transposition of sequencing adaptors
@@ -14040,7 +14040,7 @@ references:
   URL: 'http://dx.plos.org/10.1371/journal.pone.0085024'
   volume: '8'
 
-- id: demuinckNovelUltraHighthroughput2017a
+- id: demuinckNovelUltraHighthroughput2017
   abstract: >-
     Advances in sequencing technologies and bioinformatics have made the
     analysis of microbial communities almost routine. Nonetheless, the need
@@ -21218,7 +21218,7 @@ references:
   URL: 'https://doi.org/10.1080/03014223.1981.10427942'
   volume: '8'
 
-- id: goldsonSevereInsectPest2020a
+- id: goldsonSevereInsectPest2020
   abstract: >-
     Abstract.  New Zealand’s intensive pastures, comprised almost entirely
     introduced Lolium L. and Trifolium L. species, are arguably the most
@@ -27423,7 +27423,7 @@ references:
   URL: 'https://link.springer.com/article/10.1007/s13592-012-0181-6'
   volume: '44'
 
-- id: hylandThisWorkAntithetical2020
+- id: hylandThisWorkAntithetical2020a
   accessed:
     - year: 2020
       month: 3
@@ -38559,7 +38559,7 @@ references:
   URL: 'http://www.pnas.org/content/108/31/12657'
   volume: '108'
 
-- id: marcaisMUMmer4FastVersatile2018a
+- id: marcaisMUMmer4FastVersatile2018
   abstract: >-
     The MUMmer system and the genome sequence aligner nucmer included within it
     are among the most widely used alignment packages in genomics. Since the
@@ -47762,33 +47762,7 @@ references:
   URL: 'https://doi.org/10.1080/15476286.2016.1201618'
   volume: '14'
 
-- id: pimentelBiologicalInvasionsEconomic2002a
-  abstract: >-
-    Bioinvasion is fast becoming one of the world's most costly ecological
-    problems, as it disrupts agriculture, drastically alters ecosystems, spreads
-    disease, and interferes with shipping. The economic and environmental
-    damages from alien plant, animals, and microbes in the United States,
-    British Isles, Australia, South Africa, India, and Brazil acco
-  author:
-    - family: Pimentel
-      given: Ph D.
-      suffix: David
-  ISBN: 978-1-4200-4166-8
-  issued:
-    - year: 2002
-      month: 6
-      day: 13
-  language: en
-  number-of-pages: '386'
-  publisher: CRC Press
-  source: Google Books
-  title: >-
-    Biological Invasions: Economic and Environmental Costs of Alien Plant,
-    Animal, and Microbe Species
-  title-short: Biological Invasions
-  type: book
-
-- id: pimentelBiologicalInvasionsEconomic2002c
+- id: pimentelBiologicalInvasionsEconomic2002
   abstract: >-
     Bioinvasion is fast becoming one of the world's most costly ecological
     problems, as it disrupts agriculture, drastically alters ecosystems, spreads
@@ -47815,6 +47789,32 @@ references:
   title-short: Biological Invasions
   type: book
   URL: 'https://www.taylorfrancis.com/books/9780429123863'
+
+- id: pimentelBiologicalInvasionsEconomic2002a
+  abstract: >-
+    Bioinvasion is fast becoming one of the world's most costly ecological
+    problems, as it disrupts agriculture, drastically alters ecosystems, spreads
+    disease, and interferes with shipping. The economic and environmental
+    damages from alien plant, animals, and microbes in the United States,
+    British Isles, Australia, South Africa, India, and Brazil acco
+  author:
+    - family: Pimentel
+      given: Ph D.
+      suffix: David
+  ISBN: 978-1-4200-4166-8
+  issued:
+    - year: 2002
+      month: 6
+      day: 13
+  language: en
+  number-of-pages: '386'
+  publisher: CRC Press
+  source: Google Books
+  title: >-
+    Biological Invasions: Economic and Environmental Costs of Alien Plant,
+    Animal, and Microbe Species
+  title-short: Biological Invasions
+  type: book
 
 - id: pimentelEnvironmentalEconomicCosts1992
   author:
@@ -68209,7 +68209,7 @@ references:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=17947991&retmode=ref&cmd=prlinks
   volume: '2'
 
-- id: zotero-4087
+- id: zotero-3522
   type: chapter
 
 - id: zouGenomewideStudyAging2000

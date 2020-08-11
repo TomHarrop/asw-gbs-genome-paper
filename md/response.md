@@ -1,26 +1,31 @@
 Dear Dr. Perera,
 
-Thanks for considering our manuscript for publication in *Insects*.
-
-We found the comments of the three reviewers very helpful, and have revised our manuscript accordingly. 
+Thanks for considering our manuscript for publication in *Insects*. 
+We are grateful for the three reviewers' comments, which were very helpful in revising our manuscript.
 
 Sincerely,
-blah
-
+Tom Harrop.
 
 
 ## Review 1
+
+Reviewer's comments in italics, with our response below.
 
 *TITLE*
 
 *The title might be a bit of a stretch; authors were able to document high genetic diversity across ASW populations but are unable to provide clear link to the adaptation to biocontrol. Would the authors consider hedging (“could allow adaptation to biocontrol” or something more along those lines)?*
 
 We have changed the title to
-"Genetic diversity in invasive populations of Argentine stem weevil associated with adaptation to biocontrol".
+"Genetic diversity in invasive populations of Argentine stem weevil is associated with adaptation to biocontrol".
 
 *METHODS*
 
-**Lines 76-77, as a reader familiar with your previous work on the subject, I wondered why not compare ASW collected in Lolium perenne/clover pastures with ASW collected from L. multiflorum pastures, since the latter hosted weevils with higher parasitism rates (Tomasetto et al 2017)? It would be very interesting if host-associated genetic divergence were related to parasitism survivorship.**
+*Lines 76-77, as a reader familiar with your previous work on the subject, I wondered why not compare ASW collected in Lolium perenne/clover pastures with ASW collected from L. multiflorum pastures, since the latter hosted weevils with higher parasitism rates (Tomasetto et al 2017)? It would be very interesting if host-associated genetic divergence were related to parasitism survivorship.*
+
+There are two reasons we chose these sites:
+
+- the weevils are mobile and we would expect the genotypes in neighbouring *L. perenne* and *L. multiflorum* stands to be similar (see [10.1111/j.1365-3032.1981.tb00272.x](https://doi.org/10.1111/j.1365-3032.1981.tb00272.x), [10.1017/S0007485399000553](https://doi.org/10.1017/S0007485399000553) and [10.1093/ee/18.6.996](https://doi.org/10.1093/ee/18.6.996));
+- *L. multiflorum* pastures are ephemeral, usually persisting for less than a year, after which they are recultivated (often with *L. perenne*).
 
 *RESULTS*
 
@@ -47,11 +52,15 @@ We did the same analyses without a reference genome (i.e. using the '*de novo*' 
 Using the *de novo* approach, we also failed to detect skewed allele frequencies between parasitised an unparasitised individuals.
 We decided not to include these results in the manuscript, because they repeat the results we got from the reference-guided approach but lack information about linkage and physical proximity between markers.
 
-***There were a few additional discussion topics I found myself wanting to read about relative to these results. One was that including a discussion of adaptation rates within sexual vs. asexual populations would be appropriate for context given the story and conclusion. Another interesting discussion might involve comparisons with other biocontrol successes and failures (although as the authors stated in the introduction, this remains the sole record of pest out-evolving its biocontrol agent), especially relative to genomic diversity/sexual vs. asexual reproductive modes. Lastly, the parasitoid would have undergone similarly high selection pressure. Do the authors think it possible that the reduced parasitism rates in ASW reflect host switching by the parasitoid? Is it a specialist or can it parasitize more than one host species?***
+*There were a few additional discussion topics I found myself wanting to read about relative to these results. One was that including a discussion of adaptation rates within sexual vs. asexual populations would be appropriate for context given the story and conclusion. Another interesting discussion might involve comparisons with other biocontrol successes and failures (although as the authors stated in the introduction, this remains the sole record of pest out-evolving its biocontrol agent), especially relative to genomic diversity/sexual vs. asexual reproductive modes.*
 
-- "adaptation rates" in sexual vs. asexual populations (would depend on strength of selection)
-- is there a review we can point to for "other biocontrol successes and failures"
-- host specificity/switching in parasitoid. Reference for this?
+There is no other documented classical biological control failure, let alone a study that covers the effect of a parthenogenetic parasitoid active against a sexually-reproducing host.
+However, the the work of Casanovas *et al*. (2018; [10.1371/journal.pone.0207610](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207610)) is pertinent inasmuch that their modelling work was based on parameters obtained from other extensive historical field and laboratory biology and ecology datasets.
+
+*Lastly, the parasitoid would have undergone similarly high selection pressure. Do the authors think it possible that the reduced parasitism rates in ASW reflect host switching by the parasitoid? Is it a specialist or can it parasitize more than one host species?*
+
+We have added discussion of host specificity to the discussion as follows: "This lack of variation, and the inability of *M. hyperodae* to switch hosts, would limit the capacity of *M. hyperodae* to co-evolve with ASW".
+This includes a citation to the following paper: [10.1007/BF02373121](https://doi.org/10.1007/BF02373121).
 
 ## Review 2
 
@@ -112,7 +121,7 @@ This comment is correct.
 Non-parasitised weevils are not necessarily resistant, they may have escaped parasitism and/or exposure.
 We had intended to convey this with the sentence "*iii.* microscopic detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals".
 We've clarified this by changing the wording as follows:
-"*iii.* microscopic detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals, because individuals without a detectable parasitoid are not necessarily resistant, *e.g.* if they had not been exposed to the parasitoid before collection from the field;""
+"*iii.* microscopic detection of the parasitoid may not be a strong enough phenotype to separate resistant and susceptible individuals, because individuals without a detectable parasitoid are not necessarily resistant, *e.g.* if they had not been exposed to the parasitoid before collection from the field;"
 
 *Lines 346-347: “Assemblies using long reads capture more of the genome, presumably because larger repeat regions can be assembled”. Yes, but they are also prone to more errors!*
 

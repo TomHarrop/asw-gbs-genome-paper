@@ -5,6 +5,7 @@ Previous reports using randomly amplified polymorphic DNA (RAPD) markers and *cy
 In contrast, our results from a genome-wide genotype-by-sequencing (GBS) approach reveal a high level of genetic diversity within and between populations.
 We suggest that this standing variation provides an evolutionary advantage to ASW populations in comparison to their biocontrol agent, *M. hyperodae*.
 We expect variation to be limited by asexual reproduction in *M. hyperodae* (e.g. [@casanovasAsymmetryReproductionStrategies2018]).
+This lack of variation, and the inability of *M. hyperodae* to switch hosts [@goldsonHostSpecificityTesting1992], would limit the capacity of *M. hyperodae* to co-evolve with ASW.
 This indicates that genetic variation in both host and biocontrol agent need to be monitored with high-resolution genotyping to maintain success of biological control.
 More work will be required to describe the genetic mechanism of resistance and its prevalence in weevil populations, and to measure the amount of variation and population structure in *M. hyperodae*.
 
