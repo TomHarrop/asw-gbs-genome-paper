@@ -3148,7 +3148,7 @@ references:
   URL: 'https://academic.oup.com/jee/article/99/2/273/2218336'
   volume: '99'
 
-- id: barlowAlienInvertebratesNew2002a
+- id: barlowAlienInvertebratesNew2002
   author:
     - family: Barlow
       given: Nigel
@@ -7389,7 +7389,7 @@ references:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=23643535&retmode=ref&cmd=prlinks
   volume: '3'
 
-- id: buenrostroTranspositionNativeChromatin2013a
+- id: buenrostroTranspositionNativeChromatin2013
   abstract: >-
     We describe an assay for transposase-accessible chromatin using sequencing
     (ATAC-seq), based on direct in vitro transposition of sequencing adaptors
@@ -8451,6 +8451,52 @@ references:
   type: article-journal
   URL: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207610'
   volume: '13'
+
+- id: casasentMulticlonalInvasionBreast2018
+  abstract: "Ductal carcinoma in situ (DCIS) is an early-stage breast cancer that infrequently progresses to invasive ductal carcinoma (IDC). Genomic evolution has been difficult to delineate during invasion due to intratumor heterogeneity and the low number of tumor cells in the ducts. To overcome these challenges, we\_developed Topographic Single Cell Sequencing (TSCS) to measure genomic copy number profiles of single tumor cells while preserving their spatial context in tissue sections. We applied TSCS to 1,293 single cells from 10 synchronous patients with both DCIS and IDC regions in addition to exome sequencing. Our data reveal a direct genomic lineage between in situ and invasive tumor subpopulations and further show that most mutations and copy number aberrations evolved within the ducts prior to invasion. These results support a multiclonal invasion model, in which one or more clones escape the ducts and migrate into the adjacent tissues to establish the invasive carcinomas."
+  accessed:
+    - year: 2020
+      month: 7
+      day: 19
+  author:
+    - family: Casasent
+      given: Anna K.
+    - family: Schalck
+      given: Aislyn
+    - family: Gao
+      given: Ruli
+    - family: Sei
+      given: Emi
+    - family: Long
+      given: Annalyssa
+    - family: Pangburn
+      given: William
+    - family: Casasent
+      given: Tod
+    - family: Meric-Bernstam
+      given: Funda
+    - family: Edgerton
+      given: Mary E.
+    - family: Navin
+      given: Nicholas E.
+  container-title: Cell
+  container-title-short: Cell
+  DOI: 10.1016/j.cell.2017.12.007
+  ISSN: 0092-8674
+  issue: '1'
+  issued:
+    - year: 2018
+      month: 1
+      day: 11
+  language: en
+  page: 205-217.e12
+  source: ScienceDirect
+  title: >-
+    Multiclonal Invasion in Breast Tumors Identified by Topographic Single Cell
+    Sequencing
+  type: article-journal
+  URL: 'http://www.sciencedirect.com/science/article/pii/S0092867417314496'
+  volume: '172'
 
 - id: casidaNeonicotinoidMetabolismCompounds2011
   abstract: >-
@@ -13889,7 +13935,7 @@ references:
   URL: 'http://dx.plos.org/10.1371/journal.pone.0085024'
   volume: '8'
 
-- id: demuinckNovelUltraHighthroughput2017a
+- id: demuinckNovelUltraHighthroughput2017
   abstract: >-
     Advances in sequencing technologies and bioinformatics have made the
     analysis of microbial communities almost routine. Nonetheless, the need
@@ -20673,6 +20719,48 @@ references:
   type: article-journal
   URL: 'http://www.academia.edu/download/38338812/Goldson_et_al_NZPPS_2015.pdf'
 
+- id: goldsonHostSpecificityTesting1992
+  abstract: >-
+    The behaviour of the parasitoidMicroctonus hyperodae Loan was studied under
+    quarantine conditions to determine its likely host range in New Zealand. The
+    species was imported from South America as a potential biological control
+    agent of Argentine stem weevil,Listronotus bonariensis (Kuschel).
+  accessed:
+    - year: 2020
+      month: 6
+      day: 21
+  author:
+    - family: Goldson
+      given: S. L.
+    - family: McNeill
+      given: M. R.
+    - family: Phillips
+      given: C. B.
+    - family: Proffitt
+      given: J. R.
+  container-title: Entomophaga
+  container-title-short: Entomophaga
+  DOI: 10.1007/BF02373121
+  ISSN: 1573-8248
+  issue: '3'
+  issued:
+    - year: 1992
+      month: 9
+      day: 1
+  language: en
+  page: 483-498
+  source: Springer Link
+  title: >-
+    Host specificity testing and suitability of the parasitoid *Microctonus
+    hyperodae* (Hym.: Braconidae, Euphorinae) as a biological control agent of
+    *Listronotus bonariensis* (Col.: Curculionidae) in New Zealand
+  title-short: >-
+    Host specificity testing and suitability of the parasitoidMicroctonus
+    hyperodae (Hym.
+  type: article-journal
+  URL: 'https://doi.org/10.1007/BF02373121'
+  volume: '37'
+
 - id: goldsonIfWhenSuccessful2014
   abstract: >-
     Classical biological control of insects has a long history of success, with
@@ -20839,7 +20927,7 @@ references:
   URL: 'https://doi.org/10.1080/03014223.1981.10427942'
   volume: '8'
 
-- id: goldsonSevereInsectPest2020a
+- id: goldsonSevereInsectPest2020
   abstract: >-
     Abstract.  New Zealand’s intensive pastures, comprised almost entirely
     introduced Lolium L. and Trifolium L. species, are arguably the most
@@ -23729,6 +23817,77 @@ references:
   type: article-journal
   URL: 'http://onlinelibrary.wiley.com/doi/10.1111/tpj.13147/abstract'
   volume: '86'
+
+- id: harropGeneticDiversityInvasive2020
+  abstract: >-
+    Modified, agricultural landscapes are susceptible to damage by insect pests.
+    Biological control of pests is typically successful once a control agent has
+    established, but this depends on the agent&rsquo;s capacity to co-evolve
+    with the host. Theoretical studies have shown that different levels of
+    genetic variation between the host and the control agent will lead to rapid
+    evolution of resistance in the host. Although this has been reported in one
+    instance, the underlying genetics have not been studied. To address this, we
+    measured the genetic variation in New Zealand populations of the pasture
+    pest, Argentine stem weevil (Listronotus bonariensis), which is controlled
+    with declining effectiveness by a parasitoid wasp, Microctonus hyperodae. We
+    constructed a draft reference genome of the weevil, collected samples from a
+    geographical survey of 10 sites around New Zealand, and genotyped them using
+    a modified genotyping-by-sequencing approach. New Zealand populations of
+    Argentine stem weevil have high levels of heterozygosity and low population
+    structure, consistent with a large effective population size and frequent
+    gene flow. This implies that Argentine stem weevils were able to evolve more
+    rapidly than their biocontrol agent, which reproduces asexually. These
+    findings show that monitoring genetic diversity in biocontrol agents and
+    their targets is critical for long-term success of biological control.
+  accessed:
+    - year: 2020
+      month: 7
+      day: 14
+  author:
+    - family: Harrop
+      given: Thomas W. R.
+    - family: Le Lec
+      given: Marissa F.
+    - family: Jauregui
+      given: Ruy
+    - family: Taylor
+      given: Shannon E.
+    - family: Inwood
+      given: Sarah N.
+    - family: Stijn
+      given: Tracey
+      non-dropping-particle: van
+    - family: Henry
+      given: Hannah
+    - family: Skelly
+      given: John
+    - family: Ganesh
+      given: Siva
+    - family: Ashby
+      given: Rachael L.
+    - family: Jacobs
+      given: Jeanne M. E.
+    - family: Goldson
+      given: Stephen L.
+    - family: Dearden
+      given: Peter K.
+  container-title: Insects
+  DOI: 10.3390/insects11070441
+  issue: '7'
+  issued:
+    - year: 2020
+      month: 7
+  language: en
+  number: '7'
+  page: '441'
+  publisher: Multidisciplinary Digital Publishing Institute
+  source: www.mdpi.com
+  title: >-
+    Genetic Diversity in Invasive Populations of Argentine Stem Weevil
+    Associated with Adaptation to Biocontrol
+  type: article-journal
+  URL: 'https://www.mdpi.com/2075-4450/11/7/441'
+  volume: '11'
 
 - id: harropHMWDNAExtraction
   abstract: |-
@@ -26973,7 +27132,7 @@ references:
   URL: 'https://link.springer.com/article/10.1007/s13592-012-0181-6'
   volume: '44'
 
-- id: hylandThisWorkAntithetical2020
+- id: hylandThisWorkAntithetical2020a
   accessed:
     - year: 2020
       month: 3
@@ -35551,6 +35710,61 @@ references:
   URL: 'https://academic.oup.com/bioinformatics/article/28/2/298/198891'
   volume: '28'
 
+- id: liSingleNucleusSequencing2017
+  abstract: >-
+    Production of maternal haploids using a conspecific haploid inducer is
+    routine and highly efficient in maize. However, the underlying mechanism of
+    haploid induction (HI) is unclear. We develop a method to isolate three
+    nuclei from a pollen grain and four microspores from a tetrad for
+    whole-genome sequencing. A high rate of aneuploidy is observed at the
+    three-nucleus stage (6/22 pollens) rather than at the tetrad stage (1/72
+    microspores) in one HI line CAU5. Frequent aneuploidy is also observed in
+    another two inducer lines, but not in two regular lines, which implies that
+    HI may be associated with pollen aneuploidy. We further sequence the
+    individual embryos and endosperms of 88 maize kernels crossing between
+    regular and inducer lines. Genome-wide elimination of the CAU5-derived
+    chromosome is identified in eight of 81 embryos. Together, these results
+    suggest that continuous chromosome fragmentation occurring post meiosis in
+    the gametophyte may cause haploidy of the embryo.
+  accessed:
+    - year: 2020
+      month: 7
+      day: 19
+  author:
+    - family: Li
+      given: Xiang
+    - family: Meng
+      given: Dexuan
+    - family: Chen
+      given: Shaojiang
+    - family: Luo
+      given: Haishan
+    - family: Zhang
+      given: Qinghua
+    - family: Jin
+      given: Weiwei
+    - family: Yan
+      given: Jianbing
+  container-title: Nature Communications
+  DOI: 10.1038/s41467-017-00969-8
+  ISSN: 2041-1723
+  issue: '1'
+  issued:
+    - year: 2017
+      month: 10
+      day: 23
+  language: en
+  number: '1'
+  page: '991'
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Single nucleus sequencing reveals spermatid chromosome fragmentation as a
+    possible cause of maize haploid induction
+  type: article-journal
+  URL: 'https://www.nature.com/articles/s41467-017-00969-8'
+  volume: '8'
+
 - id: liStructuralFunctionalDivergence2004
   abstract: >-
     How polyphagous herbivores cope with the diversity and unpredictability of
@@ -38054,7 +38268,7 @@ references:
   URL: 'http://www.pnas.org/content/108/31/12657'
   volume: '108'
 
-- id: marcaisMUMmer4FastVersatile2018a
+- id: marcaisMUMmer4FastVersatile2018
   abstract: >-
     The MUMmer system and the genome sequence aligner nucmer included within it
     are among the most widely used alignment packages in genomics. Since the
@@ -38656,6 +38870,66 @@ references:
   type: article-journal
   URL: 'http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12291/abstract'
   volume: '15'
+
+- id: mathysTemporalTrackingMicroglia2017
+  abstract: >-
+    Microglia, the tissue-resident macrophages in the brain, are damage sensors
+    that react to nearly any perturbation, including neurodegenerative diseases
+    such as Alzheimer’s disease (AD). Here, using single-cell RNA sequencing, we
+    determined the transcriptome of more than 1,600 individual microglia cells
+    isolated from the hippocampus of a mouse model of severe neurodegeneration
+    with AD-like phenotypes and of control mice at multiple time points during
+    progression of neurodegeneration. In this neurodegeneration model, we
+    discovered two molecularly distinct reactive microglia phenotypes that are
+    typified by modules of co-regulated type I and type II interferon response
+    genes, respectively. Furthermore, our work identified previously unobserved
+    heterogeneity in the response of microglia to neurodegeneration, discovered
+    disease stage-specific microglia cell states, revealed the trajectory of
+    cellular reprogramming of microglia in response to neurodegeneration, and
+    uncovered the underlying transcriptional programs.
+  accessed:
+    - year: 2020
+      month: 7
+      day: 19
+  author:
+    - family: Mathys
+      given: Hansruedi
+    - family: Adaikkan
+      given: Chinnakkaruppan
+    - family: Gao
+      given: Fan
+    - family: Young
+      given: Jennie Z.
+    - family: Manet
+      given: Elodie
+    - family: Hemberg
+      given: Martin
+    - family: De Jager
+      given: Philip L.
+    - family: Ransohoff
+      given: Richard M.
+    - family: Regev
+      given: Aviv
+    - family: Tsai
+      given: Li-Huei
+  container-title: Cell Reports
+  container-title-short: Cell Reports
+  DOI: 10.1016/j.celrep.2017.09.039
+  ISSN: 2211-1247
+  issue: '2'
+  issued:
+    - year: 2017
+      month: 10
+      day: 10
+  language: en
+  page: 366-380
+  source: ScienceDirect
+  title: >-
+    Temporal Tracking of Microglia Activation in Neurodegeneration at
+    Single-Cell Resolution
+  type: article-journal
+  URL: 'http://www.sciencedirect.com/science/article/pii/S2211124717313141'
+  volume: '21'
 
 - id: matsubaraEhd2RiceOrtholog2008
   abstract: >-
@@ -47197,33 +47471,7 @@ references:
   URL: 'https://doi.org/10.1080/15476286.2016.1201618'
   volume: '14'
 
-- id: pimentelBiologicalInvasionsEconomic2002a
-  abstract: >-
-    Bioinvasion is fast becoming one of the world's most costly ecological
-    problems, as it disrupts agriculture, drastically alters ecosystems, spreads
-    disease, and interferes with shipping. The economic and environmental
-    damages from alien plant, animals, and microbes in the United States,
-    British Isles, Australia, South Africa, India, and Brazil acco
-  author:
-    - family: Pimentel
-      given: Ph D.
-      suffix: David
-  ISBN: 978-1-4200-4166-8
-  issued:
-    - year: 2002
-      month: 6
-      day: 13
-  language: en
-  number-of-pages: '386'
-  publisher: CRC Press
-  source: Google Books
-  title: >-
-    Biological Invasions: Economic and Environmental Costs of Alien Plant,
-    Animal, and Microbe Species
-  title-short: Biological Invasions
-  type: book
-
-- id: pimentelBiologicalInvasionsEconomic2002c
+- id: pimentelBiologicalInvasionsEconomic2002
   abstract: >-
     Bioinvasion is fast becoming one of the world's most costly ecological
     problems, as it disrupts agriculture, drastically alters ecosystems, spreads
@@ -47250,6 +47498,32 @@ references:
   title-short: Biological Invasions
   type: book
   URL: 'https://www.taylorfrancis.com/books/9780429123863'
+
+- id: pimentelBiologicalInvasionsEconomic2002a
+  abstract: >-
+    Bioinvasion is fast becoming one of the world's most costly ecological
+    problems, as it disrupts agriculture, drastically alters ecosystems, spreads
+    disease, and interferes with shipping. The economic and environmental
+    damages from alien plant, animals, and microbes in the United States,
+    British Isles, Australia, South Africa, India, and Brazil acco
+  author:
+    - family: Pimentel
+      given: Ph D.
+      suffix: David
+  ISBN: 978-1-4200-4166-8
+  issued:
+    - year: 2002
+      month: 6
+      day: 13
+  language: en
+  number-of-pages: '386'
+  publisher: CRC Press
+  source: Google Books
+  title: >-
+    Biological Invasions: Economic and Environmental Costs of Alien Plant,
+    Animal, and Microbe Species
+  title-short: Biological Invasions
+  type: book
 
 - id: pimentelEnvironmentalEconomicCosts1992
   author:
@@ -67644,7 +67918,7 @@ references:
     http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=17947991&retmode=ref&cmd=prlinks
   volume: '2'
 
-- id: zotero-4087
+- id: zotero-3522
   type: chapter
 
 - id: zouGenomewideStudyAging2000

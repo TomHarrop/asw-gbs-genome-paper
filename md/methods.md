@@ -89,7 +89,8 @@ All the code we used to process the raw reads, assemble loci and run downstream 
 
 ### Reproducibility and data availability
 
-Raw sequence data for the ASW genome assembly and annotation and raw GBS reads are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession **TBA**.
+Raw sequence data for the ASW genome assembly and annotation and raw GBS reads are hosted at the National Center for Biotechnology Information Sequence Read Archive (NCBI SRA) under accession [PRJNA640511](http://www.ncbi.nlm.nih.gov/bioproject/640511).
+The draft assembly is hosted in the NCBI Genome database under accession [**TBA**](http://www.ncbi.nlm.nih.gov/bioproject/640511).
 We used Snakemake [@kosterSnakemakeScalableBioinformatics2012] to arrange analysis steps into workflows and monitor dependencies, and Singularity [@kurtzerSingularityScientificContainers2017] to  capture the computing environment.
 Using the code repositories listed in each methods section, the final results can be reproduced from the raw data with a single command using Snakemake and Singularity.
 The source for this manuscript is hosted at [github.com/TomHarrop/asw-gbs-genome-paper](https://github.com/TomHarrop/asw-gbs-genome-paper).
